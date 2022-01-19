@@ -5,8 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./styles/productdetail.css">
 </head>
 <body>
-    
+    <div id="navBar"></div>
+<!-- navbar ended here -->
+    <div id="smallbox0">
+        <div id="smallbox1">
+            <!-- remove img from inside div -->
+            <div id="smallbox1Image1"> <img id="Image1" src="" alt=""></div>
+            <div id="smallbox1Image2"> <img id="Image2" src="" alt=""></div>
+        </div>
+        <div id="smallbox2">
+            <div id="smallbox2box1"></div>
+            <div id="smallbox2box2">
+                <div id="smallbox2box2title"></div>
+                <div id="smallbox2box2price"></div>
+            </div>
+            <div id="smallbox2box3">
+                <div id="smallbox2box3star">✰✰✰✰✰</div>
+                <div id="smallbox2box3review">Write a review</div>
+            </div>
+            <div id="smallbox2box4">COLOR  -  BLACK</div>
+            <div id="smallbox2box5">
+                <div><div id="smallbox2box5box1"></div></div>
+                <div><div id="smallbox2box5box2"></div></div>
+                <div><div id="smallbox2box5box3"></div></div>
+                <div><div id="smallbox2box5box4"></div></div>
+            </div>
+            <div id="smallbox2box6">SIZE</div>
+            <div id="smallbox2box7">
+                <div>P</div>
+                <div>S</div>
+                <div>M</div>
+                <div>L</div>
+                <div>XL</div>
+            </div>
+            <div id="smallbox2box8">
+                <div>DETAILS</div>
+                <div>FIND IN STORE</div>
+                <div>REVIEWS</div>
+            </div>
+            <div id="smallbox2box9">
+                <div>Crafted with a boxy, slightly cropped fit, our sweater is finished with subtle seams for a refined look. Detailed with chunky ribbed trim, this long sleeve style is knit with a high cut V-neckline.</div>
+                <div>Style #: L1118715</div>
+            </div>
+            <div id="smallbox2box10"><h4>Fit</h4></div>
+            <div id="smallbox2box11">
+                <ul>
+                    <li>True to size, choose your normal size</li>
+                    <li>Oversized fit, long sleeves</li>
+                    <li>Hip length</li>
+                    <li>Model is 5’11” and wearing a US size S</li>
+                </ul>
+            </div>
+            <div id="smallbox2box12"> <h4>Composition</h4></div>
+            <div id="smallbox2box13">
+                <ul>
+                    <li>100% Polyster</li>
+                </ul>
+            </div>
+            <div id="smallbox2box14"> <h4>Care</h4></div>
+            <div id="smallbox2box15">Do not wash, bleach, or tumble dry. Cool iron if needed. Dry clean with petroleum solvent only. Imported.</div>
+            <div id="smallbox2box16">Available: In Stock</div>
+            <div id="smallbox2box17">
+                <div id="smallbox2box17box1">
+                    <select name="" id="">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+                <div id="smallbox2box17box2">ADD TO BAG</div>
+                <div id="smallbox2box17box3">🤍</div>
+            </div>
+    </div>
 </body>
 </html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    console.log(navbar)
+    let navBar=document.getElementById("navBar")
+    navBar.innerHTML=navbar()
+
+
+
+   let data=[
+        {
+        image1:"https://ak-media.theory.com/i/theory/TH_L1009514_001_L0?$TH-pdp-large-desktop$",
+        image2:"https://ak-media.theory.com/i/theory/TH_L1009514_001_F0?$TH-pdp-large-desktop$",
+        title:"Semi-Sheer Top in Satin",
+        price:"23,400.00"
+        }
+    ]
+    console.log(data)
+
+    let smallbox1= document.getElementById("smallbox1")
+    let smallbox2= document.getElementById("smallbox2")
+    let smallbox2box1=document.getElementById("smallbox2box1")
+    let smallbox2box2=document.getElementById("smallbox2box2")
+
+    data.map((elem)=>{
+        // smallbox1.innerText=""
+        // smallbox2.innerText=""
+
+        let smallbox1Image1=document.getElementById("smallbox1Image1")
+        let Image1=document.getElementById("Image1")
+        Image1.src=elem.image1
+        smallbox1Image1.append(Image1)
+
+        let smallbox1Image2=document.getElementById("smallbox1Image2")
+        let Image2=document.getElementById("Image2")
+        Image2.src=elem.image2
+        smallbox1Image2.append(Image2)
+
+
+
+
+
+        smallbox2box1.textContent=`Women  /  Tops  / ${ elem.title}`
+        
+        let smallbox2box2title=document.getElementById("smallbox2box2title")
+        smallbox2box2title.textContent=elem.title
+        let smallbox2box2price=document.getElementById("smallbox2box2price")
+        smallbox2box2price.textContent=`₹${elem.price}`
+    })
+</script>
+<script type="text/javascript" src="./scripts/header.js"></script>
