@@ -1,0 +1,210 @@
+#ak-account{
+    
+    border-bottom: 3px solid darkgray;
+    height: 100px;
+    width: 78%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+#ak-h1{
+    text-decoration: none;
+    text-align: center;
+    height: 100px;
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(60, 60, 60);
+    font-weight: lighter;
+}
+#ak-container{
+    /* border: 1px solid rgb(41, 41, 30); */
+    display: flex;
+    justify-content: space-around;
+    height: 1100px;
+    width: 75%;
+    margin: auto;
+}
+
+
+/* <------------Media Queries-------------> */
+
+@media(max-width: 1140px){
+    #ak-container{
+        /* border: 1px solid rgb(41, 41, 30); */
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        width: 150%;
+        margin: auto;
+        margin-left: 13%;
+    }
+    #ak-register-form{ 
+        width: 150%;
+    }
+    #ak-order-status{
+        width: 150%;
+    }
+    #ak-status-check-btn{
+        background-color: black;
+        color: white;
+        height: 55px;
+        width: 95%;
+        margin-top: 5%;
+        cursor: pointer;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif
+    }
+ }
+ /* <------------Media Queries End-------------> */
+
+
+#ak-register-form{
+    /* border: 1px solid brown; */
+    width: 50%;
+}
+#ak-order-status{
+    /* border: 1px solid blue; */
+    width: 50%;
+}
+#head-sign-up{
+    display: flex;
+    border-bottom: 0.2px solid rgb(160, 160, 160);
+    height: 7%;
+    width: 100%;
+}
+.ak-sign-in{
+    width: 45%;
+    text-align: center;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -4%;
+}
+.ak-create-account{
+
+    width: 55%;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -4%;
+}
+#ak-hover:hover{
+    /* border-bottom: 3px solid black; */
+    cursor: pointer;
+}
+#ak-order-status{
+    padding-left: 3%;
+    padding-top: 8%;
+}
+#ak-order-head{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+#ak-order-text{
+    font-size: 16px;
+    line-height: 170%;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.7;
+}
+#input-order{
+    height: 45px;
+    width: 55%;
+    margin-bottom: 13px;
+    padding-left: 3%;
+    font-size: 17px;
+}
+#ak-status-check-btn{
+    background-color: black;
+    color: white;
+    height: 55px;
+    width: 55%;
+    margin-top: 5%;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif
+}
+#ak-remember-me{
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px; 
+}
+.checkmark{
+    height: 25px;
+    width: 25px;
+}
+.Remember-me{
+    margin-right: 15px;
+}
+#ak-name-box{
+    display: flex;
+    justify-content: space-between;
+}
+.signup{
+    display: none;
+}
+.ak-sign-in{
+    border-bottom: 3px solid black;
+}
+#ak-input{
+    height: 45px;
+    width: 55%;
+    margin-bottom: 13px;
+    padding-left: 3%;
+    font-size: 17px;
+}
+#ak-signup-input{
+    height: 45px;
+    width: 96%;
+    margin-bottom: 13px;
+    padding-left: 3%;
+    font-size: 17px;
+}
+#ak-sign-input{
+    height: 45px;
+    width: 44%;
+    margin-bottom: 13px;
+    padding-left: 3%;
+    font-size: 17px;
+}
+.login{
+    padding-top: 9%;
+}
+.signup{
+    padding-top: 9%;
+}
+.pass-link{
+    padding-top: 5%;
+    font-size: 19px;
+
+}
+#ak-birthday{
+    font-size: 20px;
+}
+.select-m{
+    height: 53px;
+    width: 35%;
+    margin-right: 2%;
+    font-size: 17px;
+}
+.select-d{
+    height: 53px;
+    width: 22%;
+    margin-right: 2%;
+    font-size: 17px;
+}
+.select-y{
+    height: 47px;
+    width: 35%;
+    font-size: 18px;
+}
+#ak-gender{
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 20px;
+}
+#ak-like-to-hear-from-theory{
+    font-size: 20px;
+    
+}
+#ak-theory-policy{
+    line-height: 25px;
+}
