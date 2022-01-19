@@ -1,0 +1,103 @@
+body{
+    margin: 0%;
+}
+ #offernav {
+ width: 100%;
+ height: 170px;
+ display: flex;
+ align-items: center;
+ background-image: url("https://ak-media.theory.com/i/theory/0112-EOSSSALE25-DESKTOPv3?$defaultMedia$");
+ background-size: 100% 100%;
+ color: white;
+}
+
+#shopwomen {
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    margin-left: 71%;
+
+}
+#shopmen {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    margin-left: 100px;
+    
+}
+
+.sale {
+    font-size: 13px;
+    font-weight: 100;
+    color: rgb(211, 205, 205);
+    margin-left: 165px;
+}
+
+#imageslide{
+    width: 100%;
+    height: 720px;
+ 
+    display: block;
+    overflow: hidden;
+    position: absolute;
+}
+
+#imageslide > * {
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 720px;
+   animation: slide 15s infinite;
+   overflow: hidden;
+}
+
+#mySlides:nth-child(1){
+  
+   animation-delay: -1s;
+   background-image: url("https://ak-media.theory.com/i/theory/0104-NEW_ARRIVALS_SHOT_11_0351?$defaultMedia$");
+   background-size: 100% 100% ;
+   background-position: center;
+   color: white;
+  
+}
+
+#mySlides:nth-child(2){
+
+   animation-delay: 5s;
+   background-image: url("https://ak-media.theory.com/i/theory/0104NEW_ARRIVALS_SHOT_01_0077?$defaultMedia$");
+   background-size: 100% 100% ;
+   background-position: center;
+   
+}
+
+#mySlides div{
+display: inline-block;
+margin-left: 200px;
+margin-top: 300px;
+text-align: center;
+
+}
+#mySlides h2 {
+letter-spacing: 3px;
+font-size: 30px;
+}
+
+#mySlides p {
+letter-spacing: 2px;
+font-size: 17px;
+}
+
+#mySlides:nth-child(1) a{
+color: white;
+}
+#mySlides:nth-child(2) a{
+color: black;
+}
+
+
+@keyframes slide{
+0%{ left: 100%;width: 100%;}
+
+}
