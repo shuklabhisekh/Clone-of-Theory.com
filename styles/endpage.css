@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+}
+
 /* header CSS */ -----------------------------------
 
 #vnavbar{
@@ -35,7 +39,7 @@
     text-align: center;
     margin-top: 30px;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 30px;
 	font-family: Theory-web-ul;
     
 }
@@ -45,6 +49,52 @@
     font-size: 8px;
     margin: 0px ;
 }
+
+
+/* Mid Part CSS */
+
+#vendmidArea{
+    /* border: 1px solid black; */
+    height: 550px;
+    width: 85%;
+    margin: auto;
+    margin-top: 60px;
+
+}
+
+#vendTop{
+    text-align: center;
+    line-height: 60px;
+    border-bottom: 2px solid gray;
+}
+#vendTop > h1{
+    color:  red;
+    font-size: 60px;
+}
+
+#vendTop > h2{
+    font-size: 30px;
+}
+
+#vnumberorder{
+    display: flex;
+    font-size: 25px;
+    padding: 50px;
+}
+#vnumberorder1{
+    display: flex;
+    font-size: 25px;
+    padding-left: 50px;
+}
+
+#vnumberorder00{
+    font-size: 25px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+
 
 
 
