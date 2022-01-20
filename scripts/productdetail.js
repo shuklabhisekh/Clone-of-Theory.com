@@ -18,8 +18,7 @@ showDetials(data)
 function showDetials(elem){
 
 
-    // smallbox1.innerText=""
-    // smallbox2.innerText=""
+    
 
     let smallbox1Image1=document.getElementById("smallbox1Image1")
     let Image1=document.getElementById("Image1")
