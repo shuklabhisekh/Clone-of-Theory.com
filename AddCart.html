@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="AddCart.css">
+
+    <title>Add To Cart</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <div id="navbarbox"></div>
+
+
+   <div id="shoppingnames">
+       <p id="darkclr">SHOPPING BAG</p>
+       <i class="fal fa-angle-right arr" ></i>
+       <p id="grayclr">SHIPPING</p>
+       <i class="fal fa-angle-right arr" ></i>
+       <p id="grayclr">PAYMENT</p>
+       <i class="fal fa-angle-right arr" ></i>
+       <p id="grayclr">REVIEW </p>
+
+    </div> 
+
+    <div id="maincart">
+
+        <div id="cartdiv"></div>
+
+        <div id="promocode">
+            <div id="promodiv">
+               <h2> Promo Code</h2>
+               <hr style="background: black;height: 0.2px;border: 0;">
+
+               <input type="text" placeholder="Promo Code" id="code">
+               <button id="apply">APPLY</button>
+            </div>
+            <div id="orderdiv">
+               <h2>Order Summary</h2>
+               <hr style="background: black;height: 0.2px;border: 0;">
+            </div>
+
+            <button id="checkoutbtn">CONTINUE TO CHECKOUT</button>
+        </div>
+
+    </div>
+
+    <div id="Recommend">
+     <h2>Recommende for you</h2>
+
+     <div id="rcmndData">
+         <div>
+             <img src="https://ak-media.theory.com/i/theory/TH_K0701412_FKN_L0/CLAIRENE?$TH-Bestseller52x$" alt="">
+            <div id="clr">
+                <div style="background-color: black;"></div>
+                <div style="background-color: #8891b2;"></div>
+                <div style="background-color: #30312c;"></div>
+                <div style="background-color: #d6be9d;"></div>
+                <div style="background-color: #fff6b8;"></div>
+            </div>
+             <p>Clairene Jacket in Double-Face Wool</p>
+             <p>₹ 30,500.00</p>
+            </div>
+         <div>
+             <img src="https://ak-media.theory.com/i/theory/TH_L0888704_XHX_L0/?$TH-Bestseller52x$" alt="">
+             <div id="clr">
+                <div style="background-color: black;"></div>
+                <div style="background-color: #8891b2;"></div>
+                <div style="background-color: #30312c;"></div>
+                <div style="background-color: #d6be9d;"></div>
+                <div style="background-color: #fff6b8;"></div>
+            </div>
+             <p>Crewneck Sweater in Cashmere</p>
+        <p>₹ 24,400.00</p>
+            </div>
+         <div>
+             <img src="https://ak-media.theory.com/i/theory/TH_L0509208_001_L0/FWRD-SEAM-PANT?$TH-product-tile2x$" alt="">
+             <div id="clr">
+                <div style="background-color: black;"></div>
+                <div style="background-color: #8891b2;"></div>
+                <div style="background-color: #30312c;"></div>
+                <div style="background-color: #d6be9d;"></div>
+                <div style="background-color: #fff6b8;"></div>
+            </div>
+             <p>Seamed Pant in Eco Rosina Crepe</p>
+         <p>₹ 24,400.00</p>
+            </div>
+         <div>
+             <img src="https://ak-media.theory.com/i/theory/TH_L1002526_001_L0/RUCHED-BD-SHIRT?$TH-product-tile2x$" alt="">
+             <div id="clr">
+                <div style="background-color: black;"></div>
+                <div style="background-color: #8891b2;"></div>
+                <div style="background-color: #30312c;"></div>
+                <div style="background-color: #d6be9d;"></div>
+                <div style="background-color: #fff6b8;"></div>
+            </div>
+             <p>Ruched Button Up Shirt in Strech Silk</p>
+        <p>₹ 12,600.00</p>
+            </div>
+     </div>
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import navbar from "./components/navbar.js"
+console.log(navbar);
+    let navbarbox = document.getElementById("navbarbox");
+
+    navbarbox.innerHTML=navbar();
+</script>
