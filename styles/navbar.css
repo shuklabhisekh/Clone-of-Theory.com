@@ -17,6 +17,7 @@
 
 body{
 	margin: 0;
+	overflow-x: hidden;
 }
 
 #navbar{
@@ -63,7 +64,7 @@ body{
 }
 
 .Main--navbar a{
-	color:rgba(0,0,0,.9);
+	color:rgba(0,0,0,.7);
 	text-decoration: none;
 
 }
@@ -91,6 +92,9 @@ body{
 .header--serach input{
 	border: none;
 	width: 90px;
+	font-family: Trade Gothic LH Extended;
+	font-size: 12px;
+	
 
 }
 

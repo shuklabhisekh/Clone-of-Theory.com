@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="../styles/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../styles/font.css">
 	<link rel="stylesheet" type="text/css" href="../styles/about.css">
+	<link rel="stylesheet" type="text/css" href="../styles/footer.css">
 	<title></title>
 </head>
 <body>
@@ -57,7 +58,7 @@
 			<div class="about-philosophy">
 				<div class="philo-bg-1">
 					<div class="about-philo-detail">
-						<h2>Fit</h2>
+						<p class="about-philo-detail--head">Fit</p>
 						<p>
 							Our commitment to design, fit, and construction ensures exceptional comfort and quality.
 						</p>
@@ -65,7 +66,7 @@
 				</div>
 				<div class="philo-bg-2">
 					<div class="about-philo-detail">
-						<h2>Fabric</h2>
+						<p class="about-philo-detail--head">Fabric</p>
 						<p>
 							We source our materials from the best mills in the world and test every fabric for its hand-feel, durability, and design.
 						</p>
@@ -73,7 +74,7 @@
 				</div>
 				<div class="philo-bg-3">
 					<div class="about-philo-detail">
-						<h2>Style</h2>
+						<p class="about-philo-detail--head">Style</p>
 						<p>
 							Versatile, sophisticated, and easy to wear, our seasonal collections are designed with purpose.
 						</p>
@@ -81,16 +82,31 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="about-4">
+			<img src="../imges/about-img6.jpg">
+			<div>
+				<div class="about-mod">03</div>
+				<div class="about-header-mod">Theory For Good</div>
+				<p>
+					We are committed to making a positive impact on the people who wear our clothes, our industry, and our planet, beginning with our Good fabrics.
+				</p>	
+				<a href="">DISCOVER MORE</a>
+			</div>
+		</div>
 	</div>
+
+	<div id="footer"></div>
 </body>
 </html>
 
 <script type="module">
 	import navbar from '../components/navbar.js'
-
+	import footer from '../components/footer.js'
 	let nav = document.getElementById("navbar")
 	nav.innerHTML = navbar()
+
+	let foot = document.getElementById("footer")
+	foot.innerHTML = footer()
 </script>
 
 <script type="text/javascript" src="../scripts/header.js"></script>
