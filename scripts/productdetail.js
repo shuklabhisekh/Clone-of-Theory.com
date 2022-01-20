@@ -1,20 +1,23 @@
-let data=[
-    {
-    image1:"https://ak-media.theory.com/i/theory/TH_L1009514_001_L0?$TH-pdp-large-desktop$",
-    image2:"https://ak-media.theory.com/i/theory/TH_L1009514_001_F0?$TH-pdp-large-desktop$",
-    title:"Semi-Sheer Top in Satin",
-    price:"23,400.00"
-    }
-]
+// let data=[
+//     {
+//     image1:"https://ak-media.theory.com/i/theory/TH_L1009514_001_L0?$TH-pdp-large-desktop$",
+//     image2:"https://ak-media.theory.com/i/theory/TH_L1009514_001_F0?$TH-pdp-large-desktop$",
+//     title:"Semi-Sheer Top in Satin",
+//     price:"23,400.00"
+//     }
+// ]
+// console.log(data)
+let data=JSON.parse(localStorage.getItem("product_details"))
 console.log(data)
-// let data=JSON.parse(localStorage.getItem("product_details"))
 
 let smallbox1= document.getElementById("smallbox1")
 let smallbox2= document.getElementById("smallbox2")
 let smallbox2box1=document.getElementById("smallbox2box1")
 let smallbox2box2=document.getElementById("smallbox2box2")
+showDetials(data)
+function showDetials(elem){
 
-data.map((elem)=>{
+
     // smallbox1.innerText=""
     // smallbox2.innerText=""
 
@@ -37,8 +40,8 @@ data.map((elem)=>{
     let smallbox2box2title=document.getElementById("smallbox2box2title")
     smallbox2box2title.textContent=elem.title
     let smallbox2box2price=document.getElementById("smallbox2box2price")
-    smallbox2box2price.textContent=`₹${elem.price}`
-})
+    smallbox2box2price.textContent=`${elem.price}`
+}
 
 
 //checkout button CSS CHANGE WHILE ON SCROLL

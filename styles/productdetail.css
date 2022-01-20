@@ -27,13 +27,19 @@
 }
 #smallbox2{
     padding: 40px 80px;
-    padding-right: 60px;
+    padding-right: 40px;
 }
 #smallbox2box2{
+    /* border: 1px solid red; */
     font-size: 22px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 25px;
+}
+#smallbox2box2price{
+/* border: 1px solid purple; */
+/* margin-left: -20px; */
+width: 150px;
 }
 #smallbox2box3{
     display: flex;
