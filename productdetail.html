@@ -7,9 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="./styles/productdetail.css">
+
+
 </head>
 <body>
-    <div id="navBar"></div>
+    <div id="navbar"></div>
 <!-- navbar ended here -->
     <div id="smallbox0">
         <div id="smallbox1">
@@ -68,26 +70,33 @@
             </div>
             <div id="smallbox2box14"> <h4>Care</h4></div>
             <div id="smallbox2box15">Do not wash, bleach, or tumble dry. Cool iron if needed. Dry clean with petroleum solvent only. Imported.</div>
-            <div id="smallbox2box16">Available: In Stock</div>
-            <div id="smallbox2box17">
-                <div id="smallbox2box17box1">
-                    <select name="" id="">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                    </select>
+            <div id="smallbox2box16fixed">
+                <div id="smallbox2box16">Available: In Stock</div>
+                <div id="smallbox2box17">
+                    <div id="smallbox2box17box1">
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <div id="smallbox2box17box2">ADD TO BAG</div>
+                    <div id="smallbox2box17box3">🤍</div>
                 </div>
-                <div id="smallbox2box17box2">ADD TO BAG</div>
-                <div id="smallbox2box17box3">🤍</div>
-            </div>
+            </div>   
+    </div>
+    <!-- you may also like part -->
+    <div id="smallbox3">
+        <div id="smallbox3box1">You May Also Like</div>
+        <div id="smallbox3box2"></div>
     </div>
 </body>
 </html>
 <script type="module">
     import navbar from "./components/navbar.js"
     console.log(navbar)
-    let navBar=document.getElementById("navBar")
+    let navBar=document.getElementById("navbar")
     navBar.innerHTML=navbar()
 
 
@@ -132,5 +141,20 @@
         let smallbox2box2price=document.getElementById("smallbox2box2price")
         smallbox2box2price.textContent=`₹${elem.price}`
     })
+
+
+//HEADER CSS CHANGE WHILE ON SCROLL
+var addToCartFixed = document.querySelector("#smallbox2box16fixed")
+window.onscroll = function (e) {
+    if(window.scrollY > 900){
+    	addToCartFixed.classList.add("addToCartFixed_scroll")
+    }else{
+    	addToCartFixed.classList.remove("addToCartFixed_scroll")
+      
+    }
+};
+
+  
 </script>
+
 <script type="text/javascript" src="./scripts/header.js"></script>
