@@ -48,6 +48,7 @@ td {
 
 td p {
     margin-top: -40px;
+    font-size: 16px;
 }
 #tabledata {
     padding: 20px;
@@ -59,8 +60,24 @@ td p {
     margin-top: 50px;
     font-size: 15px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
+.sTotal {
+    margin-top: 0px;
+}
+
+#subTotal {
+
+    display: flex;
+   margin: 20px 20px;
+  justify-content: space-between;
+}
+#Total {
+    display: flex;
+   margin: 0px 20px;
+  justify-content: space-between;
+}
     </style>
 </head>
 <body>
@@ -114,6 +131,16 @@ td p {
             <div id="orderdiv">
                <h4>Order Summary</h4>
                <hr style="background: black;height: 0.2px;border: 0;">
+               
+              <div id="subTotal">
+                <p>Sub-Total</p>
+                <p id="Price"></p>
+              </div> 
+              <div id="Total">
+                   <p>Total</p>
+                   <p id="Price"></p>
+                </div>
+              
             </div>
 
             <button id="checkoutbtn">CONTINUE TO CHECKOUT</button>
@@ -195,6 +222,14 @@ append(cart)
 
 
     function append(data){
+
+        var totalPrice = 0;
+    for(var i=0; i<data.length; i++){
+        totalPrice += Number(data[i].price);
+    }
+    document.querySelector("#Price").textContent= "₹ "+(totalPrice);
+
+
 document.querySelector("tbody").innerHTML="";
 data.forEach((el,index)=>{
 
@@ -211,11 +246,16 @@ img.src = el.image2;
         let quantity = document.createElement("div")
         quantity.innerHTML=`<select>
         <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
     </select>`
         
 
         let sTotal = document.createElement("p")
+        sTotal.setAttribute("class","sTotal")
         sTotal.innerHTML = el.price;
+
 
         let edit = document.createElement("p")
         edit.innerHTML = "Edit";
