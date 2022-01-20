@@ -45,7 +45,7 @@
           flex: 2;
           border: black 1px solid;
           height: 95%;
-          overflow-y: scroll;
+          overflow-y: auto;
         }
 
         /* ::-webkit-scrollbar{

@@ -15,16 +15,21 @@
     <style>
         table{
             width: 100%;
+            /* border-bottom: 1px solid black; */
+            border-collapse: collapse;
+            /* padding: 20px; */
         }
         tr{
             /* border-bottom: 1px solid black; */
-            border: 1px solid black;
+            /* border: 1px solid black; */
+           
         }
 th{
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
   width: 20%;
   height: 30px;
-  table-layout: fixed;
+  /* table-layout: fixed; */
+ 
 }
 
 .image{
@@ -33,8 +38,15 @@ th{
 }
 
 td {
+    padding: 10px 0px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 13px;
+    border-top: 1px solid black;
+   
+}
+#tabledata {
+    padding: 20px;
 }
 
 
@@ -67,6 +79,7 @@ td {
 
         <div id="cartdiv">
 
+            <div id="tabledata">
 <table>
     <thead>
         <tr>
@@ -82,7 +95,7 @@ td {
     </tbody>
 
 </table>
-           
+ </div>
 
         </div>
 
@@ -170,13 +183,13 @@ td {
 
 
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cart = JSON.parse(localStorage.getItem("cart"));
     console.log(cart);
 append(cart)
 
 
     function append(data){
-
+document.querySelector("tbody").innerHTML="";
 data.forEach((el,index)=>{
 
 
