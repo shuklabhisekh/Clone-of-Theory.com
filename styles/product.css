@@ -121,7 +121,20 @@
 	background-color: #d6be9d;
 }
 
+.sliver{
+	background-color: #bab7ba;
+}
 
+.lavender{
+	background-color: #ebebeb;
+}
+
+.darkgrey{
+	background-color: #96a7af;
+}
+.dimigrey{
+	background-color: #7c635e;
+}
 .products-show{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -172,4 +185,45 @@
 
 #img2 , #bigImg2:hover #imghover2 ,  #bigImg2:hover .hoverCart{
    display:block
+}
+
+.heart-icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+}
+
+
+/*Sorting function */
+.sorting_header{
+	position: relative;
+	cursor: pointer;
+}
+
+.sorting_div{
+	position: absolute;
+	border: 1px solid #ccc;
+	z-index: 5;
+	margin-top:20px;
+	right:3%;
+	width:14%;
+	padding:35px 25px;
+	background-color: #fff;
+	display: none;
+
+}
+
+.sorting_div > ul{
+	list-style: none;
+	line-height: 60px;
+	margin-left:8%;
+	letter-spacing:1.4px;
+	font-size: 15px;
+	color:#212529;
+
+}
+
+.sortPrice{
+	cursor: pointer;
 }

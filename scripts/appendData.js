@@ -1,10 +1,12 @@
 function appendData(products , location){
-
+	location.innerHTML = "";
 	products.map((item)=>{
 		let div = document.createElement("div")
 		div.style.cursor = "pointer"
 		let imgdiv = document.createElement("div")
 		imgdiv.setAttribute("class" , "product-img")
+		let icon = document.createElement("span")
+		icon.innerHTML = `<i class="fa fa-heart-o heart-icon" style="font-size:20px"></i>`
 		let img = document.createElement("img")
 		img.src = item.image1
 
@@ -27,7 +29,7 @@ function appendData(products , location){
 		//STORING DATA TO PRODUCT DETAILS PAGE
 		img.addEventListener("click" , function(){
 			localStorage.setItem("product_details" , JSON.stringify(item))
-			window.location.href = "";
+			window.location.href = "../pages/productdetail.html";
 		})
 
 		//STRONGING DATA FOR ADD TO CART
@@ -52,7 +54,7 @@ function appendData(products , location){
 		let price = document.createElement("p")
 		price.innerText = item.price
 
-		imgdiv.append(img , hoverdiv)
+		imgdiv.append(img , hoverdiv , icon)
 		detail_div.append(colorPlate , title , price)
 		div.append(imgdiv , detail_div)
 		location.append(div)

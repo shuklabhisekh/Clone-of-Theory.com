@@ -13,55 +13,55 @@ function navbar(){
 								<div>
 									<h3>New + Now</h3>
 									<ul>
-										<li><a href="">New Arrivals</a></li>
-										<li><a href="">Bestsellers</a></li>
-										<li><a href="">Pant Theory</a></li>
-										<li><a href="">Cashmere Shop</a></li>
-										<li><a href="">Sweaters + Outerwear</a></li>
-										<li><a href="">The New 9 To 5</a></li>
-										<li><a href="">Theory For Good</a></li>
+										<li><a href="../pages/womenproducts.html">New Arrivals</a></li>
+										<li><a href="../pages/womenproducts.html">Bestsellers</a></li>
+										<li><a href="../pages/womenproducts.html">Pant Theory</a></li>
+										<li><a href="../pages/womenproducts.html">Cashmere Shop</a></li>
+										<li><a href="../pages/womenproducts.html">Sweaters + Outerwear</a></li>
+										<li><a href="../pages/womenproducts.html">The New 9 To 5</a></li>
+										<li><a href="../pages/womenproducts.html">Theory For Good</a></li>
 									</ul>
 								</div>
 								<div>
 									<h3>Clothing</h3>
 									<ul>
 
-										<li><a href="">View All</a></li>
-										<li><a href="">Pants & Shorts</a></li>
-										<li><a href="">Blazers & Jackets</a></li>
-										<li><a href="">Dresses & Jumpsuits</a></li>
-										<li><a href="">Loungewear</a></li>
-										<li><a href="">Outerwear</a></li>
-										<li><a href="">Sweaters</a></li>
-										<li><a href="">Skirts</a></li>
-										<li><a href="">Suits</a></li>
-										<li><a href="">T-Shirts</a></li>
-										<li><a href="">Tops</a></li>
+										<li><a href="../pages/womenproducts.html">View All</a></li>
+										<li><a href="../pages/womenproducts.html">Pants & Shorts</a></li>
+										<li><a href="../pages/womenproducts.html">Blazers & Jackets</a></li>
+										<li><a href="../pages/womenproducts.html">Dresses & Jumpsuits</a></li>
+										<li><a href="../pages/womenproducts.html">Loungewear</a></li>
+										<li><a href="../pages/womenproducts.html">Outerwear</a></li>
+										<li><a href="../pages/womenproducts.html">Sweaters</a></li>
+										<li><a href="../pages/womenproducts.html">Skirts</a></li>
+										<li><a href="../pages/womenproducts.html">Suits</a></li>
+										<li><a href="../pages/womenproducts.html">T-Shirts</a></li>
+										<li><a href="../pages/womenproducts.html">Tops</a></li>
 									</ul>
 								</div>
 								<div>
 									<h3>Accessories</h3>
 									<ul>
-										<li><a href="">Shoes</a></li>
-										<li><a href="">Bags</a></li>
-										<li><a href="">Gloves, Hats & Scarves</a></li>
-										<li><a href="">Belts</a></li>
+										<li><a href="../pages/womenproducts.html">Shoes</a></li>
+										<li><a href="../pages/womenproducts.html">Bags</a></li>
+										<li><a href="../pages/womenproducts.html">Gloves, Hats & Scarves</a></li>
+										<li><a href="../pages/womenproducts.html">Belts</a></li>
 									</ul>
 								</div>
 								<div>
 									<h3>Sales</h3>
-									<ul><li><a href="">View All</a></li>
+									<ul><li><a href="../pages/womenproducts.html">View All</a></li>
 									</ul>
 								</div>
 								<div>
 									<img src ="../imges/nav-img1.jpg" width="200px"/>
 									<h4>Style Reset</h4>
-									<a href="">Shop Now</a>
+									<a href="../pages/womenproducts.html">Shop Now</a>
 								</div>
 								<div>
 									<img src ="../imges/nav-img2.jpg"  width="200px"/>
 									<h4>Essential Trios</h4>
-									<a href="">Shop Now</a>
+									<a href="../pages/womenproducts.html">Shop Now</a>
 								</div>
 							</div>
 						</div>
@@ -74,14 +74,14 @@ function navbar(){
 								<div>
 									<h3>New + Now</h3>
 									<ul>
-										<li><a href="">New Arrivals</a></li>
-										<li><a href="">Bestsellers</a></li>
-										<li><a href="">Precision Ponte</a></li>
-										<li><a href="">Pant Theory</a></li>
-										<li><a href="">Sweaters + Outerwear</a></li>
-										<li><a href="">Cashmere</a></li>
-										<li><a href="">The New 9 To 5</a></li>
-										<li><a href="">Theory For Good</a></li>
+										<li><a href="../pages/menproducts.html">New Arrivals</a></li>
+										<li><a href="../pages/menproducts.html">Bestsellers</a></li>
+										<li><a href="../pages/menproducts.html">Precision Ponte</a></li>
+										<li><a href="../pages/menproducts.html">Pant Theory</a></li>
+										<li><a href="../pages/menproducts.html">Sweaters + Outerwear</a></li>
+										<li><a href="../pages/menproducts.html">Cashmere</a></li>
+										<li><a href="../pages/menproducts.html">The New 9 To 5</a></li>
+										<li><a href="../pages/menproducts.html">Theory For Good</a></li>
 										
 									</ul>
 								</div>
@@ -89,22 +89,22 @@ function navbar(){
 									<h3>Clothing</h3>
 									<ul>
 
-										<li><a href="">View All</a></li>
-										<li><a href="">Pants & Shorts</a></li>
-										<li><a href="">Blazers & Jackets</a></li>
-										<li><a href="">Loungewear</a></li>
-										<li><a href="">Outerwear</a></li>
-										<li><a href="">Shirts</a></li>
-										<li><a href="">Suits</a></li>
-										<li><a href="">Sweaters</a></li>
-										<li><a href="">Sweatshirts & Hoodies</a></li>
-										<li><a href="">T-Shirts & Polos</a></li>
+										<li><a href="../pages/menproducts.html">View All</a></li>
+										<li><a href="../pages/menproducts.html">Pants & Shorts</a></li>
+										<li><a href="../pages/menproducts.html">Blazers & Jackets</a></li>
+										<li><a href="../pages/menproducts.html">Loungewear</a></li>
+										<li><a href="../pages/menproducts.html">Outerwear</a></li>
+										<li><a href="../pages/menproducts.html">Shirts</a></li>
+										<li><a href="../pages/menproducts.html">Suits</a></li>
+										<li><a href="../pages/menproducts.html">Sweaters</a></li>
+										<li><a href="../pages/menproducts.html">Sweatshirts & Hoodies</a></li>
+										<li><a href="../pages/menproducts.html">T-Shirts & Polos</a></li>
 									</ul>
 								</div>
 								<div>
 									<h3>Accessories</h3>
 									<ul>
-										<li><a href="">View All</a></li>
+										<li><a href="../pages/menproducts.html">View All</a></li>
 									</ul>
 								</div>
 								<div>
@@ -114,12 +114,12 @@ function navbar(){
 								<div>
 									<img src ="../imges/nav-img3.jpg" width="200px"/>
 									<h4>Style Reset</h4>
-									<a href="">Shop Now</a>
+									<a href="../pages/menproducts.html">Shop Now</a>
 								</div>
 								<div>
 									<img src ="../imges/nav-img4.jpg"  width="200px"/>
 									<h4>Essential Trios</h4>
-									<a href="">Shop Now</a>
+									<a href="../pages/menproducts.html">Shop Now</a>
 								</div>
 							</div>
 						</div>
@@ -164,18 +164,18 @@ function navbar(){
 								<div>
 									<h3>About Theory</h3>
 									<ul>
-										<li><a href="">Story</a></li>
-										<li><a href="">Philosophy</a></li>
-										<li><a href="">Services</a></li>
-										<li><a href="">Stores</a></li>
-										<li><a href="">The Theory App</a></li>
+										<li><a href="../pages/about.html">Story</a></li>
+										<li><a href="../pages/about.html">Philosophy</a></li>
+										<li><a href="../pages/about.html">Services</a></li>
+										<li><a href="../pages/about.html">Stores</a></li>
+										<li><a href="../pages/about.html">The Theory App</a></li>
 									</ul>
 								</div>
 
 								<div>
 									<img src ="../imges/nav-img7.jpg" width="200px"/>
 									<h4>Theory For Good</h4>
-									<a href="">Read More</a>
+									<a href="../pages/about.html">Read More</a>
 								</div>
 							</div>
 						</div>
@@ -203,7 +203,7 @@ function navbar(){
 						<a href="">Stores</a>
 					</li>
 					<li>
-						<a href="">Sign In</a>
+						<a href="../pages/signup.html">Sign In</a>
 					</li>
 					<li>
 						<div class="header--cart">

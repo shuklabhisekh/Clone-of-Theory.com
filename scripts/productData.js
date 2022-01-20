@@ -1,5 +1,17 @@
 let men = [
     {
+        title : "Full-Zip Hoodie in Waffle-Knit Cotton",
+        price : "₹ 16,600.00",
+        image1 : "https://ak-media.theory.com/i/theory/TH_L1094505_XHX_L0/BALENA-FZ?$TH-product-tile2x$",
+        image2 : "https://ak-media.theory.com/i/theory/TH_L1094505_XHX_0/BALENA-FZ?$TH-product-tile2x$"
+    },
+    {
+        title : "Jogger in Tech Terry Cotton",
+        price : "₹ 15,800.00",
+        image1 : "https://ak-media.theory.com/i/theory/TH_L0794203_0CO_L0/COLTS-JOGGER?$TH-product-tile2x$",
+        image2 : "https://ak-media.theory.com/i/theory/TH_L0794203_0CO_0/COLTS-JOGGER?$TH-product-tile2x$"
+    },
+    {
         title : "Sylvain Shirt in Structure Knit",
         price : "₹ 14,100.00",
         image1 : "https://ak-media.theory.com/i/theory/TH_J0794505_0CT_L0/SYLVAIN-ND?$TH-product-tile3x$",
@@ -67,6 +79,18 @@ let men = [
 
 let women = [
 
+  {
+    title : "Turtleneck Tunic in Cashmere",
+    price : "₹ 23,500.00",
+    image1 : "https://ak-media.theory.com/i/theory/TH_L1118714_B00_L0/TURTLENECK-TUNIC?$TH-product-tile2x$",
+    image2 : "https://ak-media.theory.com/i/theory/TH_L1118714_B00_0/TURTLENECK-TUNIC?$TH-product-tile2x$"
+  },
+  {
+    title : "High V-Neck Sweater in Cashmere",
+    price : "₹ 25,200.00",
+    image1 : "https://ak-media.theory.com/i/theory/TH_L1118715_C05_L0/HIGH-NECK-PO?$TH-product-tile2x$",
+    image2 : "https://ak-media.theory.com/i/theory/TH_L1118715_C05_0/HIGH-NECK-PO?$TH-product-tile2x$"
+  },
   {
     title : "Treeca Pant in Good Wool",
     price : "₹ 16,700.00",

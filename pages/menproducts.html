@@ -13,7 +13,7 @@
 	<div id="navbar"></div>
 	<div class="product">
 		<div class="product-filter">
-			<p>Women</p>
+			<p>Men</p>
 			<div class="short_line"></div>
 			<div class="filter-div">
 				<div class="filter-head">
@@ -143,7 +143,17 @@
 					</ul>
 				</div>
 				<div>
-					<p>Sort</p>
+					<p class="sorting_header">Sort</p>
+					<div class="sorting_div">
+						<ul>
+							<li class="sortPrice" id="Recommended">RECOMMENDED</li>
+							<li class="sortPrice" id="Newest">NEWEST</li>
+							<li class="sortPrice" id="Best sellers">BEST SELLERS</li>
+							<li class="sortPrice" id="High">PRICE HIGH</li>
+							<li class="sortPrice" id="Low">PRICE LOW</li>
+							
+						</ul>
+					</div>
 				</div>
 			</div>
 
@@ -152,36 +162,39 @@
 				<div>
 					<div class="product-img" id="bigImg1">
 						<div class="hoverCart">Quick Add</div>
-						<img  id="img1" src="../imges/womenBigImg1.webp">
-						<img  id="imghover1" src="https://ak-media.theory.com/i/theory/TH_K0701412_0F4_0/?$TH-product-tile2x$">
+						<img  id="img1" src="../imges/menBigImg1.webp">
+						<img  id="imghover1" src="https://ak-media.theory.com/i/theory/TH_J0794505_0CT_0/?$TH-product-tile2x$">
+						<i class="fa fa-heart-o heart-icon" style="font-size:24px"></i>
 					</div>
 					<div class="products-name">
 						<div class="Colors-plate">
 							<span class="black"></span>
-							<span class="active-color-border lightslategrey"></span>
-							<span class="florwhite"></span>
+							<span class="active-color-border sliver"></span>
+							<span class="lavender"></span>
+							<span class="darkgrey"></span>
 							<span class="darkslategrey"></span>
-							<span class="tan"></span>
 							<p>+2</p>
 						</div>
-						<p>Clairene Jacket in Double-Face Wool-Cashmere</p>
-						<p>₹ 50,800.00</p>
+						<p>Sylvain Shirt in Structure Knit</p>
+						<p>₹ 14,100.00</p>
 					</div>
 				</div>
 				<div>
 					<div class="product-img" id="bigImg2">
 						<div class="hoverCart">Quick Add</div>
-						<img  id="img2" src="../imges/womenBigImg2.jpg">
-						<img  id="imghover2" src="https://ak-media.theory.com/i/theory/TH_L0818756_G0F_0/SHAPED-CARDI-A?$TH-product-tile3x$">
+						<img  id="img2" src="../imges/menBigImg2.webp">
+						<img  id="imghover2" src="https://ak-media.theory.com/i/theory/TH_L0888703_FGT_0/HILLES-QT?$TH-product-tile3x$">
+						<i class="fa fa-heart-o heart-icon" style="font-size:24px"></i>
 					</div>	
 					<div class="products-name">
 						<div class="Colors-plate">
-							<span class="tan"></span>
-							<span class="active-color-border black"></span>
-							<span class="lightslategrey"></span>
+							<span class="black"></span>
+							<span class="darkslategrey"></span>
+							<span class="dimigrey"></span>
+							<span class="darkslategrey active-color-border"></span>
 						</div>
-						<p>Shaped Cardigan in Cashmere</p>
-						<p>₹ 33,700.00</p>
+						<p>Quarter-Zip Sweater in Cashmere</p>
+						<p>₹ 29,400.00</p>
 					</div>
 				</div>
 			</div>
@@ -208,10 +221,55 @@
 	foot.innerHTML = footer()
 
 	let main = document.querySelector(".products-show")
-	appendData(women , main)
+	appendData(men , main)
 
+	//SOrting function
+	let sort_header = document.querySelector(".sorting_header")
+	let sort_div = document.querySelector(".sorting_div")
+	let show = true
+	sort_header.addEventListener("click" , function(){
+		if(show){
+			sort_div.style.display = "block"
+		}else{
+			sort_div.style.display = "none"
+		}
+		show = !show
+		
+	})
 
+	//sort by price
+	let p = document.querySelectorAll(".sortPrice")
+	for(let i = 0 ; i < p.length ; i++){
+		p[i].addEventListener("click" , function(){
+			sort_div.style.display = "none"
+			if(this.id == "Low" || this.id == "High"){
+				sort_header.innerHTML = `Sort (Price ${this.id})`
+			}else{
+				sort_header.innerHTML = `Sort (${this.id})`
+			}
+			
+			show = !show
+			sortByprice(this.id)
 
+		})
+	}
+
+	function sortByprice(name){
+		if(name == "Low"){
+            men.sort(function(a, b){
+                return Number(a.price.slice(2).replace(",","")) - Number(b.price.slice(2).replace(",",""))
+            });
+        }
+        if(name == "High"){
+            men.sort(function(a, b){
+                return Number(b.price.slice(2).replace(",","")) - Number(a.price.slice(2).replace(",",""))
+            });
+        }
+        
+        console.log(men , main)
+        appendData(men , main)
+	}
+	
 </script>
 
 <script type="text/javascript" src="../scripts/header.js"></script>
