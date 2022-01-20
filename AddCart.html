@@ -45,6 +45,10 @@ td {
     border-top: 1px solid black;
    
 }
+
+td p {
+    margin-top: -40px;
+}
 #tabledata {
     padding: 20px;
 }
@@ -171,6 +175,8 @@ td {
             </div>
      </div>
     </div>
+
+    
 </body>
 </html>
 
@@ -202,8 +208,11 @@ img.src = el.image2;
         desc.innerHTML=el.title;
         let price = document.createElement("p")
         price.innerHTML = el.price;
-        let quantity = document.createElement("p")
-        quantity.innerHTML = 1;
+        let quantity = document.createElement("div")
+        quantity.innerHTML=`<select>
+        <option>1</option>
+    </select>`
+        
 
         let sTotal = document.createElement("p")
         sTotal.innerHTML = el.price;
