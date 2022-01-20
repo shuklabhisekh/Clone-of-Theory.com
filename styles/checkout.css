@@ -11,13 +11,11 @@ body{
 }
 #vnavbar{
     width: 100%;
-    /* height: 95px; */
-    /* border: 1px solid black; */
+
     border-bottom: 1px solid rgb(167, 167, 167);
     position: fixed;
-    /* margin: 0px; */
     background-color: white;
-}
+} 
 #vtopblackbar{
     background-color: black;
     color: white;

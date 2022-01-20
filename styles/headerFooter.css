@@ -1,0 +1,50 @@
+/* header CSS */ -----------------------------------
+
+#vnavbar{
+    width: 100%;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    position: fixed;
+    background-color: white;
+}
+#vtopblackbar{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+#vtopblackbar > p{
+    margin: 0px;
+    font-family: Trade Gothic LH Extended;
+    font-size: 17px;
+    text-align: center;
+    padding: 2px;
+}
+#vtheoryhome > p{
+    font-size: 52px;
+    margin: 8px;
+    text-align: center;
+    font-family: Trade Gothic LH Extended;
+    font-weight: bolder;
+}
+
+
+
+/* Footer CSS */
+
+
+#vfoot{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 40px;
+	font-family: Theory-web-ul;
+    
+}
+
+#vfoot > p:nth-child(3){
+    /* border: 1px solid black; */
+    font-size: 8px;
+    margin: 0px ;
+}
+
+
+
