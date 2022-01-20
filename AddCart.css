@@ -44,8 +44,16 @@
         #cartdiv {
           flex: 2;
           border: black 1px solid;
-          height: 72%;
+          height: 95%;
+          overflow-y: scroll;
         }
+
+        /* ::-webkit-scrollbar{
+            border-radius: 10px;
+            background-color: rgb(228, 228, 228);
+            width: 5px;
+            height: 0px;
+        } */
 
         #promocode {
             flex: 1;
