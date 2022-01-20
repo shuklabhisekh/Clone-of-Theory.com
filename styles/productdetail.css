@@ -1,14 +1,4 @@
-/* @font-face{
-	font-family: Trade Gothic LH Extended;
-	src : url("../font/TradeGothicLH-Extended.ttf") format("truetype");
-	src :local("TradeGothicLH-Extended") , url("../font/TradeGothicLH-Extended.ttf") format("truetype");
-}
 
-@font-face{
-	font-family: Theory-web-ul;
-	src : url("../font/Theory-web-ul.ttf") format("truetype");
-	src :local("Theory-web-ul") , url("../font/Theory-web-ul.ttf") format("truetype");
-} */
 
 #smallbox0{
     /* border: 4px solid red; */
@@ -267,8 +257,8 @@ flex-basis: 65px;
 }
 #smallbox3{
     margin-top: 100px;
-    border: 2px solid lawngreen;
-    width: 1360px;
+    /* border: 2px solid lawngreen; */
+    width: 1345px;
     height: 700px;
 }
 #smallbox3box1{
@@ -285,11 +275,11 @@ flex-basis: 65px;
 }
 
 #smallbox4{
-    border: 1px solid darkmagenta;
-    /* width: 1360px; */
+    /* border: 1px solid darkmagenta; */
+    width: 1308px;
     margin-top: 850px;
     margin-left: -710px;
-    height: 600px;
+    
 }
 
 
@@ -308,6 +298,27 @@ flex-basis: 65px;
 
 #rcmndData img {
     width: 100%;
+    /* cursor: pointer; */
+}
+#recmndDataQuickAdd{
+    /* border: 1px solid brown; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-top: -80px;
+    margin-bottom: 40px;
+    display: none;
+    background-color: white;
+    /* cursor: pointer; */
+}
+#recmndDataImg:hover+#recmndDataQuickAdd,#recmndDataQuickAdd:hover{
+    display: grid;
+    cursor: pointer;
+    /* border: 1px solid seagreen; */
 }
 
 #rcmndData p{
@@ -324,4 +335,5 @@ flex-basis: 65px;
 #clr div{
     padding: 8px;
     border-radius: 50%;
+    cursor: pointer;
 }

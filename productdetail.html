@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="./styles/productdetail.css">
-
+    <link rel="stylesheet" type="text/css" href="./styles/footer.css">
 
 </head>
 <body>
@@ -93,7 +96,8 @@
             <!-- sanket div -->
             <div id="rcmndData">
                 <div>
-                    <img src="https://ak-media.theory.com/i/theory/TH_L0918704_XSW_L0?$TH-pdp-large-desktop$" alt="">
+                    <img id="recmndDataImg" src="https://ak-media.theory.com/i/theory/TH_L0918704_XSW_L0?$TH-pdp-large-desktop$" alt="">
+                    <div id="recmndDataQuickAdd">+ QUICK ADD</div>
                    <div id="clr">
                        <div style="background-color: rgb(90, 0, 0);"></div>
                        <div style="background-color: #8891b2;"></div>
@@ -104,7 +108,8 @@
                     <p>₹ 30,500.00</p>
                    </div>
                 <div>
-                    <img src="https://ak-media.theory.com/i/theory/TH_J0777217_001_L0?$TH-pdp-large-desktop$" alt="">
+                    <img id="recmndDataImg" src="https://ak-media.theory.com/i/theory/TH_J0777217_001_L0?$TH-pdp-large-desktop$" alt="">
+                    <div id="recmndDataQuickAdd">+ QUICK ADD</div>
                     <div id="clr">
                        <div style="background-color: black;"></div>
                        <div style="background-color: #000e42;"></div>
@@ -116,7 +121,8 @@
                <p>₹ 24,400.00</p>
                    </div>
                 <div>
-                    <img src="https://ak-media.theory.com/i/theory/TH_L0197236_FTX_L0?$TH-pdp-large-desktop$" alt="">
+                    <img id="recmndDataImg" src="https://ak-media.theory.com/i/theory/TH_L0197236_FTX_L0?$TH-pdp-large-desktop$" alt="">
+                    <div id="recmndDataQuickAdd">+ QUICK ADD</div>
                     <div id="clr">
                        <div style="background-color: rgb(163, 136, 136);"></div>
                        <div style="background-color: #303100;"></div>
@@ -127,7 +133,8 @@
                 <p>₹ 18,700.00</p>
                    </div>
                 <div>
-                    <img src="https://ak-media.theory.com/i/theory/TH_L0729545_001_L0?$TH-pdp-large-desktop$" alt="">
+                    <img id="recmndDataImg" src="https://ak-media.theory.com/i/theory/TH_L0729545_001_L0?$TH-pdp-large-desktop$" alt="">
+                    <div id="recmndDataQuickAdd">+ QUICK ADD</div>
                     <div id="clr">
                        <div style="background-color: rgb(102, 0, 71);"></div>
                        <div style="background-color: #8891b2;"></div>
@@ -148,62 +155,15 @@
     let navBar=document.getElementById("navbar")
     navBar.innerHTML=navbar()
 
+    import footer from "./components/footer.js"
+    console.log(footer)
+    let smallbox4=document.getElementById("smallbox4")
+    smallbox4.innerHTML=footer()
 
 
-   let data=[
-        {
-        image1:"https://ak-media.theory.com/i/theory/TH_L1009514_001_L0?$TH-pdp-large-desktop$",
-        image2:"https://ak-media.theory.com/i/theory/TH_L1009514_001_F0?$TH-pdp-large-desktop$",
-        title:"Semi-Sheer Top in Satin",
-        price:"23,400.00"
-        }
-    ]
-    console.log(data)
-
-    let smallbox1= document.getElementById("smallbox1")
-    let smallbox2= document.getElementById("smallbox2")
-    let smallbox2box1=document.getElementById("smallbox2box1")
-    let smallbox2box2=document.getElementById("smallbox2box2")
-
-    data.map((elem)=>{
-        // smallbox1.innerText=""
-        // smallbox2.innerText=""
-
-        let smallbox1Image1=document.getElementById("smallbox1Image1")
-        let Image1=document.getElementById("Image1")
-        Image1.src=elem.image1
-        smallbox1Image1.append(Image1)
-
-        let smallbox1Image2=document.getElementById("smallbox1Image2")
-        let Image2=document.getElementById("Image2")
-        Image2.src=elem.image2
-        smallbox1Image2.append(Image2)
-
-
-
-
-
-        smallbox2box1.textContent=`Women  /  Tops  / ${ elem.title}`
-        
-        let smallbox2box2title=document.getElementById("smallbox2box2title")
-        smallbox2box2title.textContent=elem.title
-        let smallbox2box2price=document.getElementById("smallbox2box2price")
-        smallbox2box2price.textContent=`₹${elem.price}`
-    })
-
-
-//HEADER CSS CHANGE WHILE ON SCROLL
-var addToCartFixed = document.querySelector("#smallbox2box16fixed")
-window.onscroll = function (e) {
-    if(window.scrollY > 900){
-    	addToCartFixed.classList.add("addToCartFixed_scroll")
-    }else{
-    	addToCartFixed.classList.remove("addToCartFixed_scroll")
-      
-    }
-};
-
+  
   
 </script>
 
 <script type="text/javascript" src="./scripts/header.js"></script>
+<script type="text/javascript" src="./scripts/productdetail.js"></script>
