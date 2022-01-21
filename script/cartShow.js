@@ -53,9 +53,11 @@ function append_final(el){
    showimage.append(col1,col2)
    first_col.append(showimage)
 
+   let line = document.createElement('hr')
+
 
    row.append(showimage, col4, col3,col5);
-    document.querySelector("tbody").append(row);
+    document.querySelector("tbody").append(row,line);
 
 })
 

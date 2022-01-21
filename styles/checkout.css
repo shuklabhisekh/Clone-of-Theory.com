@@ -444,7 +444,7 @@ table{
     text-align: left;
 
 }
-th,td{
+th{
     border-bottom: 1px solid black;
 }
 
@@ -461,7 +461,7 @@ th,td{
 
 
 .image00v{
-    width: 100%;
+    width: 95%;
     /* border: 1px solid black; */
 }
 
@@ -494,5 +494,12 @@ padding-left: 60px;
 padding-left: 60px;
     text-align: left;
 
+}
+
+hr{
+    width: 196.5%;
+    border: 0.1px solid black;
+    /* height: 0px; */
+    background-color: black;
 }
 
