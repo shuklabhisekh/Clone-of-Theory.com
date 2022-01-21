@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="AddCart.css">
+<link rel="stylesheet" href="./styles/footer.css">
 
     <title>Add To Cart</title>
 
@@ -136,16 +137,21 @@
      </div>
     </div>
 
+    <div id="footerbox"></div>
     
 </body>
 </html>
 
 <script type="module">
     import navbar from "./components/navbar.js"
+    import footer from "./components/footer.js"
 // console.log(navbar);
     let navbarbox = document.getElementById("navbarbox");
 
     navbarbox.innerHTML=navbar();
+
+    let footerbox = document.getElementById("footerbox");
+    footerbox.innerHTML = footer();
 
 </script>
 
