@@ -221,13 +221,20 @@ td p {
 append(cart)
 
 
-    function append(data){
 
+
+    function append(data){
         var totalPrice = 0;
-    for(var i=0; i<data.length; i++){
-        totalPrice += Number(data[i].price);
+    for(var i=0; i<cart.length; i++){
+var bag = "";
+        for(var j=2;j<cart[i].price.length;j++){
+        bag += cart[i].price[j];
+        }
+        totalPrice += bag;
+
+        console.log(totalPrice);
     }
-    document.querySelector("#Price").textContent= "₹ "+(totalPrice);
+    document.querySelector("#Price").innerHTML= "₹ "+(totalPrice);
 
 
 document.querySelector("tbody").innerHTML="";
