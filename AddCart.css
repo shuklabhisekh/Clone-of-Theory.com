@@ -150,3 +150,69 @@
             padding: 8px;
             border-radius: 50%;
         }
+
+
+        /* Table data from localstorage css */
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+           
+        }
+       
+th{
+    border-bottom: 1px solid black;
+  width: 20%;
+  height: 30px;
+ 
+ 
+}
+
+.image{
+    width:70%;
+   
+}
+
+td {
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 13px;
+    border-top: 1px solid black;
+   
+}
+
+td p {
+    margin-top: -40px;
+    font-size: 16px;
+}
+#tabledata {
+    padding: 20px;
+}
+
+
+
+.edit{
+    margin-top: 50px;
+    font-size: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sTotal {
+    margin-top: 0px;
+
+}
+
+#subTotal {
+
+    display: flex;
+   margin: 20px 20px;
+  justify-content: space-between;
+  color: rgb(82, 77, 77);
+}
+#Total {
+    display: flex;
+   margin: 0px 20px;
+  justify-content: space-between;
+}
