@@ -455,6 +455,7 @@ th,td{
 .showimagev > td:nth-child(1){
     /* border: 1px solid black; */
     width: 20%;
+    border-bottom: none;
 }
 
 

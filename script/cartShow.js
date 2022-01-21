@@ -1,27 +1,5 @@
-// let cart = JSON.parse(localStorage.getItem("cart"));
-// console.log(cart);
-// append(cart)
-
-
-let cart = [{
-    title : "Treeca Pant in Good Wool",
-    price : "₹ 16,700.00",
-    image1 : "https://ak-media.theory.com/i/theory/TH_H0101234_A08_L0/TREECA-2?$TH-Bestseller53x$",
-    image2 : "https://ak-media.theory.com/i/theory/TH_H0101234_A08_0/TREECA-2?$TH-Bestseller53x$"
-  },
-  {
-    title : "Treeca Pant in Good Wool",
-    price : "₹ 16,700.00",
-    image1 : "https://ak-media.theory.com/i/theory/TH_H0101234_A08_L0/TREECA-2?$TH-Bestseller53x$",
-    image2 : "https://ak-media.theory.com/i/theory/TH_H0101234_A08_0/TREECA-2?$TH-Bestseller53x$"
-  },
-  {
-    title : "Treeca Pant in Good Wool",
-    price : "₹ 16,700.00",
-    image1 : "https://ak-media.theory.com/i/theory/TH_H0101234_A08_L0/TREECA-2?$TH-Bestseller53x$",
-    image2 : "https://ak-media.theory.com/i/theory/TH_H0101234_A08_0/TREECA-2?$TH-Bestseller53x$"
-  }
-]
+let cart = JSON.parse(localStorage.getItem("cart"));
+console.log(cart);
 
   append_final(cart)
 
