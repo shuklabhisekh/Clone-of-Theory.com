@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="./styles/Slide.css">
 	<link rel="stylesheet" href="./styles/midpage.css">
 	<link rel="stylesheet" href="./styles/footer.css">
-	<title></title>
+	<title> Theory Official Site | Contemporary Clothing for Women and Men</title>
+    <link rel="shortcut icon" href="https://www.theory.com/on/demandware.static/Sites-theory2_US-Site/-/default/dw580c9d16/images/favicons/favicon2.ico">
 </head>
 <body>
 
@@ -224,7 +225,7 @@
 					<li>
 						<div class="header--cart">
 							<span class="cart-count">0</span>
-							<img src="./imges/minicart.svg"/>
+							<a href="./pages/AddCart.html"><img src="./imges/minicart.svg"/></a>
 						</div>
 					</li>
 				</ul>
@@ -541,5 +542,16 @@
 </html>
 
 <script type="text/javascript" src="./scripts/header.js"></script>
+
+<script>
+    
+
+    function searchData(){
+        let search = document.querySelector("#Search").value
+        console.log(search)
+        localStorage.setItem("query",search)
+        window.location.href = "../pages/searchresult.html"
+    }
+</script>
 
 

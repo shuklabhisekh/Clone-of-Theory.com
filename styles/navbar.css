@@ -19,7 +19,7 @@ html{
 }
 body{
 	margin: 0;
-	overflow-x: hidden;
+
 }
 
 #navbar{
@@ -215,5 +215,8 @@ body{
 		display: block;
 	}
 
+	body{
+		overflow-x: hidden;
+	}
 	
 }
