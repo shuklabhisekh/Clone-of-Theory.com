@@ -161,3 +161,44 @@ border-color: black;
 0%{ left: 100%;width: 100%;}
 
 }
+
+@media screen and (max-width:450px) {
+    #offernav {
+       
+        background-image: url("https://ak-media.theory.com/i/theory/0112-EOSSSALE25-MOBILEv3?$defaultMobileMedia$");
+       height: 35vh;
+       position: relative;
+    }
+
+    #shopwomen {
+       
+        margin-left: 0;
+        position: absolute;
+        top:65%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+    #shopmen {
+       
+        margin-left: 0;
+        position: absolute;
+        top:75%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+    #imageslide{
+        height: 60vh;
+    }
+
+    #mySlides div {
+        top: 25%;
+    }
+
+    #mySlides .arrow {
+        width: 25px;
+        height: 25px;
+        top: 35%;
+    }
+}

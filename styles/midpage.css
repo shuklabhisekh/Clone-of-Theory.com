@@ -127,3 +127,37 @@
     cursor: pointer;
     display: grid;
 }
+
+@media screen and (max-width:450px) {
+    .smallbox2 {
+        grid-template-columns: repeat(1,100%);
+      
+    }
+
+    #smallbox2Journal {
+        grid-template-columns: repeat(1,100%);
+        grid-gap: 10px;
+        
+    }
+
+    #smallbox2Journal>div {
+        grid-template-columns: 49% 55%;
+        grid-gap: 12px;
+    }
+
+    .smallbox0>p {
+        width: 100%;      
+    }
+
+    .smallbox3 {
+        grid-template-columns: repeat(3,32%);
+        grid-gap: 10px;
+    }
+    .smallbox3>div {
+        height:auto;
+    }
+
+    .smallbox3>div:nth-child(4) ,.smallbox3>div:nth-child(5) ,.smallbox3>div:nth-child(6){
+        display: none;
+    }
+}

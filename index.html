@@ -20,6 +20,7 @@
 		</div>
 		<div class="Main--navbar">
 			<div class="header--left">
+                <a id="bar" href=""><img src="https://www.theory.com/on/demandware.static/Sites-theory2_US-Site/-/default/images/icons/reorder.svg" alt=""></a>
 				<ul>
 					<li class="nav-hover nav-women">
 						<a href="">Women</a>
@@ -210,8 +211,8 @@
 					</li>
 					<li>
 						<div class="header--serach">
-							<input type="text" placeholder="Search"/>
-							<img src="./imges/search.svg" width="15px" height="16px"/>
+							<input type="text" id="Search" placeholder="Search"/>
+							<img src="./imges/search.svg" width="15px" height="16px" onclick="searchData()"/>
 						</div>		
 					</li>
 					<li>
@@ -446,6 +447,7 @@
     <!--FOOTER PART-->
     <div id="footerMain">
      	<div id="footerTop">
+        <div id="server_connect--box">     
         <div id="serverBox">
             <div>
            <h2 class="h2">Client Service</h2>
@@ -465,7 +467,8 @@
                     <h2 class="h2">Connect us</h2>
                     <ul class="list">
                         <li>
-                            For international orders, please click here</li>
+                            <p>For international orders, please click here</p>
+                        </li>
                     </ul>
                 </div>
                 <div class="box">
@@ -478,6 +481,7 @@
                     </ul>
                 </div>
             </div>
+        </div>    
          <div id="singUpBox">
         <div id="upperBox">
         <h2 class="h2">Email Sign-Up</h2>

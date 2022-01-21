@@ -190,3 +190,94 @@
 hr{
     margin-top:2%;
 }
+
+#server_connect--box{
+    display: contents;
+}
+@media screen and (max-width:450px){
+            
+        #footerMain {
+            height: 110vh;
+            font-size: 13px;           
+        }
+        #server_connect--box{
+            display: flex;
+        }
+
+        #footerTop{
+            flex-direction: column;
+            height: auto;
+        }
+
+        #connectBox {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #serverBox {
+            width:100%;
+            height: auto;
+        }
+
+        .box {
+            width: 90%;
+            height: 45%;
+        }
+
+        .list {
+            line-height: 35px;
+        }
+
+        #singUpBox {
+            width: 100%;
+            margin-top: 39px;
+        }
+
+        #forCheckBox {
+            height: auto;
+            width: 110%;
+            margin-top:1%;
+        }
+
+        #checkbox {
+            height:auto;
+            
+        }
+
+        #upperBox {
+            width: 85%;
+            height: 45%;
+        }
+
+        #input1{
+            width: 76%;
+        }
+        #myForm {
+            margin-top: 15px;
+            width: 95%;
+        }
+        #button{
+            padding: 20px;
+            width: 110%;
+            margin-left: 0;
+        }
+        .list > li > p{
+            line-height: 18px;
+        }
+        #fb{
+            width: 100%;
+            justify-content: center;
+            gap:30px;
+            margin-left: -10px;
+        }
+
+        .fb1{
+            width: auto;
+        }
+        .fb1:nth-child(4)  , .fb1:nth-child(5){
+            display: none;
+        }
+        hr{
+            width: 90%;
+        }
+}
