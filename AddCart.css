@@ -151,6 +151,16 @@
             border-radius: 50%;
         }
 
+        #cartempty {
+            text-align: center;
+            font-family: Theory-web-ul;
+            letter-spacing: 2px;
+            font-size: 25px;
+            font-weight: lighter;
+            color: rgb(58, 54, 54);
+            display: none;
+        }
+
 
         /* Table data from localstorage css */
 
