@@ -6,7 +6,7 @@ let Recommend = document.getElementById("Recommend");
 let cartempty = document.getElementById("cartempty");
 
 
-let disc;
+
 
 if (cart.length != 0) {
 
@@ -43,7 +43,7 @@ append(cart)
 
         document.getElementById("apply").addEventListener("click", function discount() {
             if (code.value == "masai30") {
-                disc = Math.floor(totalPrice - (totalPrice * 0.3));
+              let disc = Math.floor(totalPrice - (totalPrice * 0.3));
                 subamount.innerHTML = null;
                 subamount.innerHTML = "₹ " + (disc) + ".00";
                 totalamount.innerHTML = null;
