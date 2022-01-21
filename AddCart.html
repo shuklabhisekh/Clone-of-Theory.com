@@ -65,6 +65,7 @@ td p {
 
 .sTotal {
     margin-top: 0px;
+
 }
 
 #subTotal {
@@ -72,6 +73,7 @@ td p {
     display: flex;
    margin: 20px 20px;
   justify-content: space-between;
+  color: rgb(82, 77, 77);
 }
 #Total {
     display: flex;
@@ -226,19 +228,34 @@ append(cart)
     function append(data){
         var totalPrice = 0;
     for(var i=0; i<cart.length; i++){
-       
-       
-
-        // var [rs,amount] = cart[i].price.split(" ")
-
         var amount = cart[i].price.slice(2).replace(",","")
 
          totalPrice += +amount;
         
       
     }
-    document.querySelector("#Price").innerHTML= "₹ "+(totalPrice)+".00";
-    document.querySelector("#Price2").innerHTML= "₹ "+(totalPrice)+".00";
+    var subamount =  document.querySelector("#Price")
+   subamount.innerHTML= "₹ "+(totalPrice)+".00";
+
+   var totalamount =  document.querySelector("#Price2");
+   totalamount.innerHTML= "₹ "+(totalPrice)+".00";
+
+let code =document.getElementById("code");
+       document.getElementById("apply").addEventListener("click", function discount(){
+        if(code.value=="masai30"){
+            let disc = Math.floor(totalPrice-(totalPrice*0.3));
+          subamount.innerHTML=null;
+          subamount.innerHTML ="₹ "+(disc)+".00";
+          totalamount.innerHTML=null;
+          totalamount.innerHTML= "₹ "+(disc)+".00";
+          code.value="";
+        }
+
+        else{
+            alert("Invalid Coupon Code");
+        }
+    });
+
 
 
 document.querySelector("tbody").innerHTML="";
