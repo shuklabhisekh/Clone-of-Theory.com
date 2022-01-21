@@ -138,7 +138,7 @@ td p {
               </div> 
               <div id="Total">
                    <p>Total</p>
-                   <p id="Price"></p>
+                   <p id="Price2"></p>
                 </div>
               
             </div>
@@ -226,15 +226,19 @@ append(cart)
     function append(data){
         var totalPrice = 0;
     for(var i=0; i<cart.length; i++){
-var bag = "";
-        for(var j=2;j<cart[i].price.length;j++){
-        bag += cart[i].price[j];
-        }
-        totalPrice += bag;
+       
+       
 
-        console.log(totalPrice);
+        // var [rs,amount] = cart[i].price.split(" ")
+
+        var amount = cart[i].price.slice(2).replace(",","")
+
+         totalPrice += +amount;
+        
+      
     }
-    document.querySelector("#Price").innerHTML= "₹ "+(totalPrice);
+    document.querySelector("#Price").innerHTML= "₹ "+(totalPrice)+".00";
+    document.querySelector("#Price2").innerHTML= "₹ "+(totalPrice)+".00";
 
 
 document.querySelector("tbody").innerHTML="";
