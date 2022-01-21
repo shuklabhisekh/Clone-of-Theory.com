@@ -255,6 +255,10 @@ input::-webkit-inner-spin-button {
    
 }
 
+#vshipbox1 > h2{
+    border-bottom: 1px solid black;
+}
+
 #vboxflex3{
     width: 95%;
     display: flex;
@@ -503,3 +507,6 @@ hr{
     background-color: black;
 }
 
+#vdiscount{
+    font-size: 12px;
+}

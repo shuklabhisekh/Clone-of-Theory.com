@@ -62,3 +62,28 @@ function append_final(el){
 })
 
 }
+
+
+var amountDisplay = JSON.parse(localStorage.getItem('Totalamount'))
+console.log('amountDisplay:', amountDisplay)
+
+
+
+var amount_show = document.querySelector('.displaypricev')
+amount_show.innerText = amountDisplay
+
+var amount_show1 = document.querySelector('.displaypricev1')
+amount_show1.innerText = amountDisplay
+
+var amount_show2 = document.querySelector('.displaypricev2')
+amount_show2.innerText = amountDisplay
+
+var amount_show3 = document.querySelector('.displaypricev3')
+amount_show3.innerText = amountDisplay
+
+
+
+let vbutton = document.getElementById('vbutton')
+vbutton.addEventListener('click', function(){
+  window.location.href = 'end.html'
+})
