@@ -145,7 +145,7 @@ body{
 
 #vinput > input{
     width: 98%;
-    height: 40px;
+    height: 32px;
     font-size: 13px;
     padding: 0px 8px;
     border: 1px solid black;
@@ -377,7 +377,7 @@ input::-webkit-inner-spin-button {
 }
 .vinputcvv > input{
     /* border: 1px solid black; */
-    height: 35px;
+    height: 30px;
 
 }
 .vthis{
@@ -409,7 +409,7 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
     padding: 0px 15px;
     /* border-bottom: 1px solid black; */
-    font-size: 20px;
+    font-size: 17px;
 }
 
 #vall{
