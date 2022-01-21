@@ -5,15 +5,26 @@ let maincart = document.getElementById("maincart");
 let Recommend = document.getElementById("Recommend");
 let cartempty = document.getElementById("cartempty");
 
+
+let disc;
+
 if (cart.length != 0) {
 
 
     console.log(cart);
 append(cart)
 
-
+   
 
     function append(data) {
+        if (data.length == 0) {
+            maincart.style.display = "none";
+            Recommend.style.display = "none";
+            cartempty.style.display = "block";
+
+            return;
+}
+
         var totalPrice = 0;
         for (var i = 0; i < cart.length; i++) {
             var amount = cart[i].price.slice(2).replace(",", "")
@@ -29,15 +40,16 @@ append(cart)
         totalamount.innerHTML = "₹ " + (totalPrice) + ".00";
 
         let code = document.getElementById("code");
+
         document.getElementById("apply").addEventListener("click", function discount() {
             if (code.value == "masai30") {
-                var disc = Math.floor(totalPrice - (totalPrice * 0.3));
+                disc = Math.floor(totalPrice - (totalPrice * 0.3));
                 subamount.innerHTML = null;
                 subamount.innerHTML = "₹ " + (disc) + ".00";
                 totalamount.innerHTML = null;
                 totalamount.innerHTML = "₹ " + (disc) + ".00";
                 code.value = "";
-
+                localStorage.setItem("Totalamount", JSON.stringify(disc));
         
             }
 
@@ -45,10 +57,12 @@ append(cart)
                 alert("Invalid Coupon Code");
             }
 
-            localStorage.setItem("Totalamount", JSON.stringify(disc));
+           
         });
 
 
+       
+          
 
         document.querySelector("tbody").innerHTML = "";
         data.forEach((el, index) => {
@@ -117,7 +131,7 @@ append(cart)
     function deletefunc(index) {
         cart.splice(index, 1)
         localStorage.setItem("cart", JSON.stringify(cart));
-        localStorage.setItem("Totalamount", JSON.stringify(disc));
+      
         append(cart);
     }
     
