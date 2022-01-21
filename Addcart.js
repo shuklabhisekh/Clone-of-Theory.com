@@ -54,10 +54,10 @@ append(cart)
         
                 }
 
-                else {
-                    alert("Invalid Coupon Code");
+                // else {
+                //     alert("Invalid Coupon Code");
                     
-                }
+                // }
 
            
             });
