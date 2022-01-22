@@ -206,7 +206,7 @@
 				</ul>
 			</div>
 			<div class="header--center">
-				<a href="/"><img src="./imges/logo.png" width="170px"/></a>
+				<a href="index.html"><img src="./imges/logo.png" width="170px"/></a>
 			</div>
 			<div class="header--right">
 				<ul>
@@ -559,7 +559,7 @@
         let search = document.querySelector("#Search").value
         console.log(search)
         localStorage.setItem("query",search)
-        window.location.href = "../pages/searchresult.html"
+        window.location.href = "./pages/searchresult.html"
     }
 
     let c = JSON.parse(localStorage.getItem("cart"));

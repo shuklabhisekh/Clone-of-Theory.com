@@ -1,7 +1,7 @@
 # ***Theory.com Clone - Construct-Week-Project***
 
 ### *<u>Tech</u>*
-We make replica of theory.com, we try to implement basic ecommerce Functionalities
+We make replica of <a href="https://www.theory.com" target="_blank">Theory.com</a>, we try to implement basic ecommerce Functionalities
 ##### Tech we use HTML, CSS, JavaScript & rapidAPI(zappos.com)
  
 
@@ -12,7 +12,7 @@ Download or clone the Repo and Run Locally
 
 <div style='page-break-after: always'></div>
 
-### *<u>Overview of Project</u>*
+### *<u>Pages Build</u>*
 Home Page
 Sign In, Sign Up page,
 Product page, Search page, Cart & Chekout Page
