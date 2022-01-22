@@ -12,7 +12,7 @@ Download or clone the Repo and Run Locally
 
 <div style='page-break-after: always'></div>
 
-### *<u>Overview of Project</u>*
+### *<u>Pages we build</u>*
 Home Page
 Sign In, Sign Up page,
 Product page, Search page, Cart & Chekout Page
