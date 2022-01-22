@@ -1,5 +1,6 @@
 async function getdata(query){
-	let res = await fetch(`https://zappos-realtime-data.p.rapidapi.com/search.php?keyword=${query}&page=1`, {
+	try{
+		let res = await fetch(`https://zappos-realtime-data.p.rapidapi.com/search.php?keyword=${query}&page=1`, {
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "zappos-realtime-data.p.rapidapi.com",
@@ -8,13 +9,18 @@ async function getdata(query){
 	})
 
 	let response = await res.json()
+	console.log(response.results)
 	appendData(response.results)
+	}catch(err){
+		console.log(err)
+	}
 }
 
 function appendData(items) {
 	let maindiv = document.querySelector("#SearchResult")
 	console.log(maindiv)
 	document.querySelector("#SearchResult").innerHTML = ""
+	let count = 0
 	items.map((item)=>{
 		
         let div = document.createElement("div")
@@ -62,9 +68,16 @@ function appendData(items) {
 		    detail_div.append(title , price)
 		    div.append(imgdiv , detail_div)
 		    document.querySelector("#SearchResult").append(div)
+		}else{
+			count+= 1
 		}
 		
 	})
+
+	console.log(count)
+	if(count == items.length){
+		document.querySelector("#SearchResult").innerHTML = "<h1>NO RESULT'S</h2>"
+	}
 }
 
 var cart=JSON.parse(localStorage.getItem("cart")) || [];

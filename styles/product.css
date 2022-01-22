@@ -148,6 +148,9 @@
 	grid-template-columns: repeat(4 , 1fr);
 }
 
+#SearchResult.no-result h1{
+	font-size: 40px;
+}
 #SearchResult  .hoverCart{
 	bottom: -80%;
 	z-index: -1;
