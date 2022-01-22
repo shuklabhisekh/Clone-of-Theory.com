@@ -30,12 +30,7 @@ Product page, Search page, Cart & Chekout Page
 
 ### *<u>Project Overview</u>*
 
-
-
-
- 
-
-
+https://user-images.githubusercontent.com/69167064/150655248-fa21911d-0c24-420e-89a5-c78b6fbe0271.mp4
 <div style='page-break-after: always'></div>
 
 ### *<u>Credits :</u>*
