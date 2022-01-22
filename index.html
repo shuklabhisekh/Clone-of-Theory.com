@@ -21,10 +21,12 @@
 		</div>
 		<div class="Main--navbar">
 			<div class="header--left">
-                <a id="bar" href=""><img src="https://www.theory.com/on/demandware.static/Sites-theory2_US-Site/-/default/images/icons/reorder.svg" alt=""></a>
+                <div id="bar"  onclick="shownav()">
+                    <img src="https://www.theory.com/on/demandware.static/Sites-theory2_US-Site/-/default/images/icons/reorder.svg" alt="">
+                </div>
 				<ul>
 					<li class="nav-hover nav-women">
-						<a href="">Women</a>
+						<a href="./pages/womenpage.html">Women</a>
 						<div class="hover women_hover">
 							<div class="hover--navbar">
 								<div>
@@ -85,7 +87,7 @@
 
 					</li>
 					<li class="nav-hover">
-						<a href="">Men</a>
+						<a href="./pages/manPagr.html">Men</a>
 						<div class="hover men_hover">
 							<div class="hover--navbar">
 								<div>
@@ -142,14 +144,14 @@
 						</div>
 					</li>
 					<li class="nav-hover">
-						<a href="">Accessories</a>
+						<a href="./pages/accesories.html">Accessories</a>
 						<div class="hover accessories_hover">
 							<div class="hover--navbar">
 								<div>
 									<h3>Women</h3>
 									<ul>
-										<li><a href="">View All</a></li>
-										<li><a href="">Shoes</a></li>
+										<li><a href="./pages/accessoriesProducts.html">View All</a></li>
+										<li><a href="./pages/accessoriesProducts.html">Shoes</a></li>
 										<li><a href="">Bags</a></li>
 										<li><a href="">Gloves, Hats & Scarves</a></li>
 										<li><a href="">Belts</a></li>
@@ -551,6 +553,23 @@
         console.log(search)
         localStorage.setItem("query",search)
         window.location.href = "../pages/searchresult.html"
+    }
+
+    let c = JSON.parse(localStorage.getItem("cart"));
+    let countBag = document.querySelector(".cart-count")
+    countBag.textContent = c.length
+
+    let check = true
+    function shownav(){
+        let leftSide = document.querySelector(".header--left")
+        if(check){
+            leftSide.classList.add("res__header--left")
+        }else{
+            leftSide.classList.remove("res__header--left")
+        }
+        check = !check;
+        
+
     }
 </script>
 

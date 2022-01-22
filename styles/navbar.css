@@ -207,7 +207,26 @@ body{
 	.header--left > ul{
 		display: none;
 	}
-	
+	.res__header--left.header--left > ul{
+		display: flex;
+		flex-direction: column;
+		width: 340%;
+		align-items: flex-start;
+		padding: 10px;
+		margin-left: -26px;
+		margin-top: 10px;
+		gap:0;
+		font-size: 15px;
+		background-color: #fff;
+	}
+	.res__header--left.header--left > ul li:not(:last-child){
+		border-bottom: 1px solid black;
+		width: 100%;
+	}
+
+	.res__header--left + .header--center{
+		margin-left: -65px;
+	}
 	.header--right > ul li:not(:last-child){
 		display: none;
 	}

@@ -41,7 +41,9 @@ function Click(sign){
      };
      arr.push(signUpObj);
      console.log(arr);
+     
      localStorage.setItem("signUpDatabase",JSON.stringify(arr));
+     window.location.href ="signup.html"
 
  }
 
@@ -63,7 +65,7 @@ function Click(sign){
      };
      if(flag==1){
         alert("login successfully")
-         window.location.href="#"
+         window.location.href="/"
      }
      else if(flag==0){
          alert("Wrong Credentials");

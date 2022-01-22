@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../styles/navbar.css">
 	<link rel="stylesheet" type="text/css" href="../styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="../styles/product.css">
-
-    <title> Product's | Theory</title>
+	<link rel="stylesheet" type="text/css" href="../styles/product.css">
+	<title> Accessories's Clothes | Theory</title>
     <link rel="shortcut icon" href="https://www.theory.com/on/demandware.static/Sites-theory2_US-Site/-/default/dw580c9d16/images/favicons/favicon2.ico">
+
 </head>
 <body>
-    <div id="navbar"></div>
-
-    <div class="product">
+	<div id="navbar"></div>
+	<div class="product">
 		<div class="product-filter">
 			<p>Women</p>
 			<div class="short_line"></div>
@@ -161,31 +159,84 @@
 				</div>
 			</div>
 
+			
+
 			<!--Append function -->
-			<div id="SearchResult" class="products-show"></div>
+			<div class="products-show"></div>
 		</div>
 	</div>
-    <div id="footer"></div>
+
+	<!--Footer -->
+	<div id="footer"></div>
 </body>
 </html>
 
-<!-- <script src="../scripts/searchfunc.js"></script> -->
-
+<script type="text/javascript" src="../scripts/productData.js"></script>
 <script type="module">
-    import navbar from '../components/navbar.js'
+	import navbar from '../components/navbar.js'
 	import footer from '../components/footer.js'
-    import getdata  from "../components/fetchdata.js"
+	import appendData from '../scripts/appendData.js'
 	let nav = document.getElementById("navbar")
 	nav.innerHTML = navbar()
 
 	let foot = document.getElementById("footer")
 	foot.innerHTML = footer()
-    
-    let query = localStorage.getItem("query")
 
-    getdata(query)
-    console.log(query)
+	let main = document.querySelector(".products-show")
+	appendData(accessoriesdata , main)
+
+	//SOrting function
+	let sort_header = document.querySelector(".sorting_header")
+	let sort_div = document.querySelector(".sorting_div")
+	let show = true
+	sort_header.addEventListener("click" , function(){
+		if(show){
+			sort_div.style.display = "block"
+		}else{
+			sort_div.style.display = "none"
+		}
+		show = !show
+		
+	})
+
+	//sort by price
+	let p = document.querySelectorAll(".sortPrice")
+	for(let i = 0 ; i < p.length ; i++){
+		p[i].addEventListener("click" , function(){
+			sort_div.style.display = "none"
+			if(this.id == "Low" || this.id == "High"){
+				sort_header.innerHTML = `Sort (Price ${this.id})`
+			}else{
+				sort_header.innerHTML = `Sort (${this.id})`
+			}
+			
+			show = !show
+			sortByprice(this.id)
+
+		})
+	}
+
+	function sortByprice(name){
+		if(name == "Low"){
+            women.sort(function(a, b){
+                return Number(a.price.slice(2).replace(",","")) - Number(b.price.slice(2).replace(",",""))
+            });
+        }
+        if(name == "High"){
+            women.sort(function(a, b){
+                return Number(b.price.slice(2).replace(",","")) - Number(a.price.slice(2).replace(",",""))
+            });
+        }
+        
+        appendData(accessoriesdata , main)
+	}
 
 
+	let c = JSON.parse(localStorage.getItem("cart"));
+	let countBag = document.querySelector(".cart-count")
+	countBag.textContent = c.length
+	
 </script>
+
 <script type="text/javascript" src="../scripts/header.js"></script>
+

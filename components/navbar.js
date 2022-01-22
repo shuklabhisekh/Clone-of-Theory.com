@@ -7,7 +7,7 @@ function navbar(){
 			<div class="header--left">
 				<ul>
 					<li class="nav-hover nav-women">
-						<a href="">Women</a>
+						<a href="../pages/womenpage.html">Women</a>
 						<div class="hover women_hover">
 							<div class="hover--navbar">
 								<div>
@@ -68,7 +68,7 @@ function navbar(){
 
 					</li>
 					<li class="nav-hover">
-						<a href="">Men</a>
+						<a href="../pages/manPagr.html">Men</a>
 						<div class="hover men_hover">
 							<div class="hover--navbar">
 								<div>
@@ -125,23 +125,23 @@ function navbar(){
 						</div>
 					</li>
 					<li class="nav-hover">
-						<a href="">Accessories</a>
+						<a href="../pages/accesories.html">Accessories</a>
 						<div class="hover accessories_hover">
 							<div class="hover--navbar">
 								<div>
 									<h3>Women</h3>
 									<ul>
-										<li><a href="">View All</a></li>
-										<li><a href="">Shoes</a></li>
-										<li><a href="">Bags</a></li>
-										<li><a href="">Gloves, Hats & Scarves</a></li>
-										<li><a href="">Belts</a></li>
+										<li><a href="../pages/accessoriesProducts.html">View All</a></li>
+										<li><a href="../pages/accessoriesProducts.html">Shoes</a></li>
+										<li><a href="../pages/accessoriesProducts.html">Bags</a></li>
+										<li><a href="../pages/accessoriesProducts.html">Gloves, Hats & Scarves</a></li>
+										<li><a href="../pages/accessoriesProducts.html">Belts</a></li>
 									</ul>
 								</div>
 								<div>
 									<h3>Men</h3>
 									<ul>
-										<li>View All</li>
+									<li><a href="../pages/accessoriesProducts.html">View All</a></li>
 									</ul>
 								</div>
 								<div>
@@ -208,7 +208,7 @@ function navbar(){
 					<li>
 						<div class="header--cart">
 							<span class="cart-count">0</span>
-							<img src="../imges/minicart.svg"/>
+							<a href="../pages/AddCart.html"><img src="../imges/minicart.svg"/></a>
 						</div>
 					</li>
 				</ul>

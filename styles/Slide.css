@@ -168,6 +168,7 @@ border-color: black;
         background-image: url("https://ak-media.theory.com/i/theory/0112-EOSSSALE25-MOBILEv3?$defaultMobileMedia$");
        height: 35vh;
        position: relative;
+       z-index: -1;
     }
 
     #shopwomen {

@@ -28,7 +28,12 @@ append(cart)
 
             var totalPrice = 0;
             for (var i = 0; i < cart.length; i++) {
-                var amount = cart[i].price.slice(2).replace(",", "")
+                if(cart[i].price[0] == "₹"){
+                    amount = cart[i].price.slice(2).replace(",", "")
+                }
+                else{
+                    amount = Math.floor(cart[i].price.slice(1))
+                }
 
                 totalPrice += +amount;
         
@@ -78,7 +83,12 @@ append(cart)
                 let desc = document.createElement("p")
                 desc.innerHTML = el.title;
                 let price = document.createElement("p")
-                price.innerHTML = el.price;
+                if(el.price[0] != "₹ "){
+                    price.innerHTML = `₹ ${el.price.slice(1)}`
+                }else{
+                    price.innerHTML = el.price;
+                }
+                
                 let quantity = document.createElement("div")
                 quantity.innerHTML = `<select>
         <option>1</option>
@@ -90,7 +100,12 @@ append(cart)
 
                 let sTotal = document.createElement("p")
                 sTotal.setAttribute("class", "sTotal")
-                sTotal.innerHTML = el.price;
+                if(el.price[0] != "₹ "){
+                    sTotal.innerHTML = `₹ ${el.price.slice(1)}`
+                }else{
+                    sTotal.innerHTML = el.price;
+                }
+            
 
 
                 let edit = document.createElement("p")
@@ -134,7 +149,7 @@ append(cart)
     function deletefunc(index) {
         cart.splice(index, 1)
         localStorage.setItem("cart", JSON.stringify(cart));
-      
+        document.querySelector(".cart-count").textContent = cart.length
         append(cart);
     }
     

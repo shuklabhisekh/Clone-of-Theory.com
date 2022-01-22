@@ -3,7 +3,7 @@ async function getdata(query){
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "zappos-realtime-data.p.rapidapi.com",
-			"x-rapidapi-key": "1047ad7af7mshd6d7d9e36e5b7a9p1c04d0jsn1d8ffbb167dd"
+			"x-rapidapi-key": "007d8907b6mshd18aa68d61b6b51p1417e6jsn6cf9b38f0b61"
 		}
 	})
 
@@ -68,9 +68,16 @@ function appendData(items) {
 }
 
 var cart=JSON.parse(localStorage.getItem("cart")) || [];
+
 function addTocart(product){
-	console.log(product)
-	cart.push(product);
+	
+	let obj = {
+		image2 : product.thumbnailImageUrl ,
+		title : product.productName ,
+		price : product.originalPrice
+	}
+	console.log(obj)
+	cart.push(obj);
     localStorage.setItem("cart", JSON.stringify(cart));
     document.querySelector(".cart-count").textContent = cart.length
 }
