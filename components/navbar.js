@@ -183,7 +183,7 @@ function navbar(){
 				</ul>
 			</div>
 			<div class="header--center">
-				<a href="./index.html"><img src="../imges/logo.png" width="170px"/></a>
+				<a href="../index.html"><img src="../imges/logo.png" width="170px"/></a>
 			</div>
 			<div class="header--right">
 				<ul>
