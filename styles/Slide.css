@@ -50,15 +50,37 @@
 
 }
 
-#mySlides .arrow{
-    width: 60px;
-    height: 60px;
-    box-sizing: border-box;
-    position: absolute;
-    top: 40%;
+.slider{
+    position: relative;
 }
 
-.arrow::before {
+.prev-arrow{
+    position: absolute;
+    z-index: 55;
+    top: 40%;
+    left:30px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.next-arrow{
+    position: absolute;
+    z-index: 55;
+    top:40%;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
+.prev-arrow::before {
     content: '';
     width: 100%;
     height: 100%;
@@ -70,92 +92,105 @@
 }
 
 
-.arrow:after {
+.prev-arrow::after {
     content: '';
     float: left;
-    position: relative;
-    top: -100%;
     width: 100%;
     height: 100%;
-    border-width: 0 3px 0 0;
+    position: absolute;
+    top:4px;
+    left:-2px;
+    border-width: 0 4px 0 0;
     border-style: solid;
     border-color: #fafafa;
     border-right:1px solid black;
     border-top:1px solid black;
 }
 
-#mySlides .arrow-left{
-    transform: rotate(-320deg);
-    left:92%;
+.next-arrow::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-width: 4px 4px 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    display: block;
 
 }
-#mySlides .arrow-right{
+
+
+.next-arrow::after {
+    content: '';
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:4px;
+    left:-2px;
+    border-width: 0 4px 0 0;
+    border-style: solid;
+    border-color: #fafafa;
+    border-right:1px solid black;
+    border-top:1px solid black;
+}
+
+.prev-arrow{
     transform: rotate(-142deg);
-    left:3%;
-    top:41.5%;
-    
 
 }
-#imageslide > * {
-   position: absolute;
-   display: block;
-   width: 100%;
-   height: 685px;
-   animation: slide 15s infinite;
-   overflow: hidden;
+
+.next-arrow{
+    transform: rotate(40deg);
+}
+.slider{
+    display: flex;
 }
 
-#mySlides:nth-child(1){
-  
-   animation-delay: -1s;
-   background-image: url("https://ak-media.theory.com/i/theory/0104-NEW_ARRIVALS_SHOT_11_0351?$defaultMedia$");
-   background-size: 100% 100% ;
-   background-position: center;
-   color: white;
-  
+.slider-div{
+    position: relative;
+}
+.slider-div img{
+    width: 100%;
+
 }
 
-#mySlides:nth-child(2){
-
-   animation-delay: 5s;
-   background-image: url("https://ak-media.theory.com/i/theory/0104NEW_ARRIVALS_SHOT_01_0077?$defaultMedia$");
-   background-size: 100% 100% ;
-   background-position: center;
-   
-}
-
-#mySlides div{
-display: inline-block;
-/*margin-left: 200px;
-margin-top: 300px;*/
-text-align: center;
-position: absolute;
-top:35%;
-left:10%;
+.slider-div > div{
+    position: absolute;
+    top:35%;
+    left:10%;
+    font-family: Theory-web-ul;
+    text-align: center;
 
 }
-#mySlides h2 {
+.slider-div > div h2 {
 font-family: Trade Gothic LH Extended;;
 font-size: 24px;
 line-height:28.8px;
 margin:50px 0px 25px;
 }
 
-#mySlides p {
+.slider-div > div p {
 
 font-size: 16px;
 line-height:20px;
 margin:10px 0px;
 }
-
-#mySlides:nth-child(1) a{
-color: white;
+.slider-div > div a{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    color:black;
+    font-size: 12px;
 }
-#mySlides:nth-child(2) a{
-color: black;
-border-color: black;
-}
 
+.white{
+    color: #fff;
+}
+.slider-div > .white a{
+    color: #fff;
+    border-color: #fff;
+}
 
 @keyframes slide{
 0%{ left: 100%;width: 100%;}
@@ -189,17 +224,35 @@ border-color: black;
         transform: translate(-50% , -50%);
     }
 
-    #imageslide{
-        height: 60vh;
+    .slider-div > div{
+        left:25%;
+        font-size: 12px;
+        color: #fff;
+    
+    }
+    .slider-div > div a{
+        color: #fff;
+        border-color: #fff;
+    }
+    .slider-div > div p {
+        display: none;
     }
 
-    #mySlides div {
-        top: 25%;
-    }
-
-    #mySlides .arrow {
+    .next-arrow{
         width: 25px;
         height: 25px;
-        top: 35%;
+        right: 10px;
+       
+    }
+    .prev-arrow{
+        width: 25px;
+        height: 25px;
+        left: 10px;
+        top:43%;
+    }
+
+    .slider-div img{
+        height: 50vh;
+    
     }
 }
