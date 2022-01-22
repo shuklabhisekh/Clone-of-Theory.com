@@ -1,7 +1,7 @@
 # ***Theory.com Clone - Construct-Week-Project***
 
 ### *<u>Tech</u>*
-We make replica of <a href="https://theory.com" target="_blank">Theory.com</a>, we try to implement basic ecommerce Functionalities
+We make replica of <a href="https://www.theory.com" target="_blank">Theory.com</a>, we try to implement basic ecommerce Functionalities
 ##### Tech we use HTML, CSS, JavaScript & rapidAPI(zappos.com)
  
 
