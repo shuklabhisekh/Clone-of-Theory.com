@@ -19,7 +19,7 @@ Download or clone the Repo and Run Locally
 <div style='page-break-after: always'></div>
 
 ### *<u>Pages Build</u>*
-Home Page
+Home Page(Responsive)
 Sign In, Sign Up page,
 Product page, Search page, Cart & Chekout Page
 
@@ -41,18 +41,36 @@ https://user-images.githubusercontent.com/69167064/150655248-fa21911d-0c24-420e-
 
 ### *<u>Credits :</u>*
 
-Abhishek Shukla (<a href="https://github.com/shuklabhisekh" target="_blank">Github Profile</a>)
+Abhishek Shukla 
+> <a href="https://github.com/shuklabhisekh" target="_blank">Github</a>
 
-Ashiq Khan (<a href="https://github.com/ashiq352" target="_blank">Github Profile</a>)
+> <a href="https://www.linkedin.com/in/shuklabhisekh/" target="_blank">Linkedin</a>
 
-Ritu Bankey (<a href="https://github.com/Ritu1011" target="_blank">Github Profile</a>)
+Ashiq Khan 
+> <a href="https://github.com/ashiq352" target="_blank">Github</a>
 
-Sanket Thombre (<a href="https://github.com/sanket008" target="_blank">Github Profile</a>)
+> <a href="https://www.linkedin.com/in/ashiq-khan-412709222" target="_blank">Linkedin</a>
 
-Shilpa Shingnapure (<a href="https://github.com/shilpashingnapure" target="_blank">Github Profile</a>)
+Ritu Bankey 
+> <a href="https://github.com/Ritu1011" target="_blank">Github</a>
 
-Vikaram sharma (<a href="https://github.com/vikram-sharma1" target="_blank">Github Profile</a>)
+> <a href="https://www.linkedin.com/in/ritu-bankey-857160211/" target="_blank">Linkedin</a>
+
+Sanket Thombre 
+> <a href="https://github.com/sanket008" target="_blank">Github</a>
+
+> <a href="https://www.linkedin.com/in/sanket-thombre-13632b114" target="_blank">Linkedin</a>
+
+Shilpa Shingnapure 
+> <a href="https://github.com/shilpashingnapure" target="_blank">Github</a>
+
+> <a href="https://github.com/shuklabhisekh" target="_blank">Linkedin</a>
+
+Vikaram sharma 
+> <a href="https://github.com/vikram-sharma1" target="_blank">Github</a>
+
+> <a href="" target="_blank">Linkedin</a>
 
 
-> Thank You :sparkling_heart:
+# Thank You :sparkling_heart:
 
