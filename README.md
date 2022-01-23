@@ -64,12 +64,12 @@ Sanket Thombre
 Shilpa Shingnapure 
 > <a href="https://github.com/shilpashingnapure" target="_blank">Github</a>
 
-> <a href="https://github.com/shuklabhisekh" target="_blank">Linkedin</a>
+> <a href="https://www.linkedin.com/in/shilpa-shingnapure-134b4320a/" target="_blank">Linkedin</a>
 
-Vikaram sharma 
+Vikram sharma 
 > <a href="https://github.com/vikram-sharma1" target="_blank">Github</a>
 
-> <a href="" target="_blank">Linkedin</a>
+> <a href="https://www.linkedin.com/in/vikram--sharma/" target="_blank">Linkedin</a>
 
 
 # Thank You :sparkling_heart:
