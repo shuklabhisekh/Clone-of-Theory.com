@@ -4,7 +4,7 @@ async function getdata(query){
 		"method": "GET",
 		"headers": {
 			"x-rapidapi-host": "zappos-realtime-data.p.rapidapi.com",
-			"x-rapidapi-key": "007d8907b6mshd18aa68d61b6b51p1417e6jsn6cf9b38f0b61"
+			"x-rapidapi-key": "0d07084d19msh5335006a4301007p143e99jsna37e1a4147b0"
 		}
 	})
 
