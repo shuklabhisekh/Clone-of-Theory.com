@@ -562,7 +562,7 @@
         window.location.href = "./pages/searchresult.html"
     }
 
-    let c = JSON.parse(localStorage.getItem("cart"));
+    let c = JSON.parse(localStorage.getItem("cart")) || [];
     let countBag = document.querySelector(".cart-count")
     countBag.textContent = c.length
 
