@@ -83,8 +83,8 @@ Vikram sharma
 
 > <a href="https://www.linkedin.com/in/vikram--sharma/" target="_blank">Linkedin</a>
 
-### _<u>You can read more about our project on our blog :</u>_
+### _<u>You can read more about our project on our blog : </u>_
 
-> <a href="" target="_blank">Blog link</a>
+> <a href="https://shuklabhisekh.medium.com/clone-of-theory-com-using-pure-html-css-advanced-js-c6503e028f1b" target="_blank">Blog Link</a>
 
 # Thank You :sparkling_heart:
