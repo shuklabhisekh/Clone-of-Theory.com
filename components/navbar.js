@@ -195,8 +195,8 @@ function navbar(){
 					</li>
 					<li>
 						<div class="header--serach">
-							<input type="text" placeholder="Search"/>
-							<img src="../imges/search.svg" width="15px" height="16px"/>
+							<input type="text" id="Search" placeholder="Search"/>
+							<img src="../imges/search.svg" width="15px" height="16px" id="searchbtn"/>
 						</div>		
 					</li>
 					<li>

@@ -184,6 +184,13 @@
     let query = localStorage.getItem("query")
 
     getdata(query)
+
+	let btn = document.querySelector("#searchbtn")
+	btn.addEventListener("click" , searchData)
+    function searchData(){
+        let search = document.querySelector("#Search").value
+        getdata(search)
+    }
     
 
 
