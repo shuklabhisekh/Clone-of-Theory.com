@@ -99,6 +99,9 @@ body{
 	
 
 }
+.header--serach img{
+	cursor: pointer;
+}
 
 .header--serach input:focus{
 	border: none;
