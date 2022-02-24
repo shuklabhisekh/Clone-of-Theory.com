@@ -228,3 +228,16 @@ td p {
    margin: 0px 20px;
   justify-content: space-between;
 }
+
+
+
+#vqntDiv{
+    width: 50%;
+    height: 30px;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    cursor: pointer;
+}

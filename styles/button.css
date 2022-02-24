@@ -1,0 +1,17 @@
+#rrewardbutton a{
+    height: 60px;
+    padding: 10px 40px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: rgb(233, 156, 156);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(17, 14, 14);
+    position: fixed;
+    right: 0;
+    margin-right: 20px;
+    bottom: 0;
+    margin-bottom: 55px;
+    z-index: 3;
+    cursor: pointer;
+}

@@ -1,4 +1,4 @@
-
+var valuevv ;
 let cart = JSON.parse(localStorage.getItem("cart"));
     
 let maincart = document.getElementById("maincart");
@@ -14,7 +14,12 @@ if (cart.length != 0) {
     console.log(cart);
 append(cart)
 
-   
+var count = 1;
+var cDiv;
+            var sTotal 
+            var mDiv
+       
+
 
     function append(data) {
 
@@ -67,10 +72,8 @@ append(cart)
            
             });
 
-
-       
-          
-
+            
+            
             document.querySelector("tbody").innerHTML = "";
             data.forEach((el, index) => {
 
@@ -90,18 +93,35 @@ append(cart)
                 }
                 
                 let quantity = document.createElement("div")
-                quantity.innerHTML = `<select>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-    </select>`
-        
+                var pDiv = document.createElement("div");
+                pDiv.textContent="+";
+                pDiv.style.fontWeight="bold";
+                mDiv = document.createElement("div");
+                mDiv.textContent="-";
+                mDiv.style.fontWeight="bold";
+                cDiv = document.createElement("div");
+                cDiv.textContent=1;
+                quantity.append(mDiv,cDiv,pDiv)
 
-                let sTotal = document.createElement("p")
+                quantity.setAttribute("id","vqntDiv");
+
+                mDiv.addEventListener("click",()=>{
+                    myminusFunc(el)
+                });
+                pDiv.addEventListener("click",()=>{
+                    myplusFunc(el)
+                });
+
+
+
+                
+                // console.log('count:', count)
+
+
+                 sTotal = document.createElement("p")
                 sTotal.setAttribute("class", "sTotal")
-                if(el.price[0] != "₹ "){
-                    sTotal.innerHTML = `₹ ${el.price.slice(1)}`
+                if(el.price[0] != "₹ "){   
+                    sTotal.innerHTML = `${el.price}`
                 }else{
                     sTotal.innerHTML = el.price;
                 }
@@ -142,6 +162,9 @@ append(cart)
                 document.querySelector("tbody").append(row);
 
             })
+
+
+          
         
 
     }
@@ -160,3 +183,31 @@ else {
     Recommend.style.display = "none";
     cartempty.style.display = "block";
 }
+
+
+
+function myplusFunc(el){
+    count++;
+    cDiv.innerHTML=count;
+    console.log(el.price);
+    sTotal.textContent="₹"+el.price.slice(1)*count;
+}
+
+
+
+function myminusFunc(el){
+    if(count<=0){
+        mDiv.removeEventListener("click",myminusFunc)
+    }
+    else{
+        count--;
+        cDiv.innerHTML=count;
+        console.log(count);
+    }
+    sTotal.textContent="₹"+el.price.slice(1)*count;
+}
+
+
+
+
+
