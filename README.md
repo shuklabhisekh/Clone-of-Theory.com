@@ -85,6 +85,6 @@ Vikram sharma
 
 ### _<u>You can read more about our project on our blog : </u>_
 
-> <a href="https://shuklabhisekh.medium.com/clone-of-theory-com-using-pure-html-css-advanced-js-c6503e028f1b" target="_blank">Clone of Theory.com</a>
+> <a href="https://shuklabhisekh.medium.com/clone-of-theory-com-including-frontend-backend-6db940b42d23" target="_blank">Clone of Theory.com</a>
 
 # Thank You :sparkling_heart:
